@@ -449,12 +449,6 @@ body, html {
         margin-bottom: 15px;
     }
 
-    .form-row .btn {
-        display: inherit;
-        margin: auto;
-        margin-top: 20px;
-    }
-
     .header .right-header-menu {
         display: -webkit-box;
         display: -webkit-flex;
@@ -478,6 +472,12 @@ body, html {
 }
 
 @media (max-width: 767px) {
+    .form-row .btn {
+        display: inherit;
+        margin: auto;
+        margin-top: 20px;
+    }
+
     .container {
         max-width: 100%;
     }

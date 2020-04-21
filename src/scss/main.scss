@@ -309,11 +309,7 @@ body, html {
     .query{
         margin-bottom: 15px;
     }
-    .form-row .btn{
-        display: inherit;
-        margin: auto;
-        margin-top: 20px;
-    }
+    
     .header .right-header-menu {
         display: flex;
         align-items: center;
@@ -327,6 +323,11 @@ body, html {
 
 }
 @media(max-width: 767px){
+    .form-row .btn{
+        display: inherit;
+        margin: auto;
+        margin-top: 20px;
+    }
     .container{
         max-width: 100%;
     }
