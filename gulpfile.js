@@ -87,6 +87,7 @@ gulp.task("scripts", function() {
       .src([
         // Берем все необходимые библиотеки
         "src/js/jquery.js",
+        "src/js/slick.js",
         "src/js/main.js"
       ])
       .pipe(concat("main.js")) // Собираем их в кучу в новом файле libs.min.js
