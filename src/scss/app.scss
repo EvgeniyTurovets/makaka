@@ -8,7 +8,11 @@ body, html {
     height: 100%;
     min-width: 320px;
     background-color: #ffffff;
-    min-width: 320px
+    min-width: 320px;
+   
+}
+#app{
+    position: relative;
 }
 .right-column{
     margin-bottom: 40px;
@@ -30,7 +34,7 @@ body, html {
 .header-row {
     background: #dedede url(../images/header_lite.jpg) repeat-y;
     -webkit-background-size: 100% 100%;
-    background-size: 100%;
+    background-size: cover;
     height: 75px;
 }
 
@@ -311,6 +315,7 @@ body, html {
                     display: block;
                 }
                 a{
+                    
                     margin-top: 20px;
                     display: block;
                     text-decoration: none;
@@ -343,7 +348,7 @@ body, html {
                     width: max-content;
                     background-color: #f64308;
                     color: #ffffff;
-                    padding: 2px 5px;
+                    padding: 0px 2px;
                     margin-left: 8px;
                     text-align: center;
                 }
@@ -386,6 +391,9 @@ body, html {
                 }
             }
             a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 100%;
                 background-color: #dde0e5;
                 text-align: center;
@@ -581,6 +589,7 @@ a.additional-search:hover {
     font-weight: 600;
     font-size: 22px;
     max-width: 530px;
+    margin-right: 10px;
 }
 .work-position a:hover{
     text-decoration: none;
@@ -643,6 +652,10 @@ a.additional-search:hover {
 .resume-item{
     border-bottom: 1px dotted #dad9d7;
     margin-bottom: 10px;
+}
+.resume-item-top{
+    display: flex;
+    justify-content: space-between;
 }
 .delete-city {
     margin-left: 10px;
@@ -1029,7 +1042,7 @@ a.additional-search:hover {
     padding: 10px 15px;
     font-weight: 600;
     width: 205px;
-    text-align: left;
+    text-align: center;
 }
 
 .personal-info-block .phone-block .phone-number:hover {
@@ -1666,6 +1679,9 @@ a.text-aqua:hover {
 .authuser-bot{
     display: none;
 }
+.left-menu{
+    display: none;
+}
 @media(max-width: 1199px){
     .left-column__wrap{
         font-size: 14px;
@@ -1676,6 +1692,19 @@ a.text-aqua:hover {
     }
 }
 @media(max-width: 991px){
+    .authuser-bot{
+        display: block;
+    }
+    .personal-info-block .photo{
+        height: auto;
+    }
+    .personal-info-block .photo .photo-profile{
+        width: 100%;
+        height: auto;
+    }
+    .container{
+        max-width: 100%;
+    }
     .menu-header-center{
         display: none;
     }
@@ -1703,19 +1732,38 @@ a.text-aqua:hover {
         padding-bottom: 0;
     }
     .left-column{
-        position: absolute;
-        left: -100%;
-        z-index: 1;
-        width: 302px;
-        top: 60px;
-        background-color: #eaebef;
+        display: none;
     }
     .left-menu{
-        transition: 1s;
+        display: none;
+        
+        position: absolute;
+       
+        z-index: 1;
+        width: 100%;
+        top: 60px;
+        height: 100%;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.3);
     }
     .left-menu.active{
-        transition: 1s;
+       
+        display: block;
+    }
+   
+    .left-menu .left-column__wrap {
+        position: absolute;
+        left: -100%;
+
+        width: 305px;
+       
+        background-color: #eaebef;
+        transition: 1s;   
+        position: relative;
+    }
+    .left-menu.active .left-column__wrap{
         left: 0;
+        transition: 1s;   
     }
     .left-column__wrap .left-column__top{
         margin-bottom: 0;
@@ -1766,6 +1814,7 @@ a.text-aqua:hover {
     #app{
         overflow: hidden;
         padding-top: 63px;
+        
     }
     
     .header-row{
@@ -1870,9 +1919,10 @@ a.text-aqua:hover {
     }
 }
 @media(max-width: 424px){
-    .left-column{
+    .left-menu{
         top: 47px;
     }
+    
     .logo{
         font-size: 25px;
         padding: 0;
@@ -1907,6 +1957,15 @@ a.text-aqua:hover {
 @media(max-width: 374px){
     .personal-info-block .table td b{
         margin-bottom: 5px;
+    }
+    .resume-item-top a{
+        font-size: 14px;
+    }
+    .resume-item-top  .work-position a{
+        font-size: 16px;
+    }
+    .resume-item-top  .work-position span{
+        font-size: 16px;
     }
     .header-wrap-flex a{
         font-size: 14px;

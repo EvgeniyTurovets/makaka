@@ -40,8 +40,9 @@ $(function(){
     
     $('.burger').click(function(){
         $(this).toggleClass('active')
+        $('.left-menu').fadeToggle()
         $('.left-menu').toggleClass('active')
-        $('.authuser-bot').fadeToggle()
+        
         
     })
     $('.authuser-top').hover(function(){
