@@ -44,4 +44,10 @@ $(function(){
         $('.authuser-bot').fadeToggle()
         
     })
+    $('.authuser-top').hover(function(){
+        $('.authuser-top-drop').fadeIn()
+    })
+    $('.authuser-top').mouseleave(function(){
+        $('.authuser-top-drop').fadeOut()
+    })
 })
