@@ -710,6 +710,7 @@ body, html {
     padding: 0px 2px;
     margin-left: 8px;
     text-align: center;
+    font-size: 12px;
 }
 
 .left-column__wrap .left-column__top .left-column__item a:hover {
@@ -2202,17 +2203,17 @@ a.text-aqua:hover {
         left: -100%;
         width: 305px;
         background-color: #eaebef;
-        -webkit-transition: 1s;
-        -o-transition: 1s;
-        transition: 1s;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
         position: relative;
     }
 
     .left-menu.active .left-column__wrap {
         left: 0;
-        -webkit-transition: 1s;
-        -o-transition: 1s;
-        transition: 1s;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
     }
 
     .left-column__wrap .left-column__top {
