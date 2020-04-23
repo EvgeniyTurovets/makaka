@@ -647,6 +647,7 @@ body, html {
 }
 
 .left-column__wrap .left-column__company .left-column__company__head .left-column__company__head__text a {
+    font-size: 14px;
     margin-top: 20px;
     display: block;
     text-decoration: none;
