@@ -3031,6 +3031,31 @@ $(function(){
     $('.profile-slider').slick({
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        responsive: [
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+                
+              }
+            },
+            {
+                breakpoint: 424,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                  
+                }
+              }
+        ]
       });
+    
+    $('.burger').click(function(){
+        $(this).toggleClass('active')
+        $('.left-menu').toggleClass('active')
+        $('.authuser-bot').fadeToggle()
+        
+    })
 })

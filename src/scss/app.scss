@@ -175,8 +175,11 @@ body, html {
 }
 .left-column__wrap{
     padding-right: 15px;
-    .left-column__company:first-child{
+    .left-column__company{
         border-bottom: 3px solid #c7ccd0;
+    }
+    .left-column__company:last-child{
+        border-bottom: 3px solid transparent;
     }
     .left-column__company{
         .left-column__company__button{
@@ -394,6 +397,7 @@ a.additional-search:hover {
     margin-top: 5px;
 }
 .edit-badge{
+    display: inline-block;
     color: #0672ca;
     font-weight: 700;
     margin-left: 5px;
@@ -927,11 +931,10 @@ a.additional-search:hover {
 }
 
 .personal-info-block .phone-block {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+   
     display: flex;
     width: auto;
+    margin-top: 15px;
 }
 
 .personal-info-block .phone-block .btn-write-message {
@@ -1582,4 +1585,267 @@ a.text-aqua:hover {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+}
+.burger{
+    display: none;
+}
+.left-column__bot{
+    display: none;
+}
+.authuser-bot{
+    display: none;
+}
+@media(max-width: 1199px){
+    .left-column__wrap{
+        font-size: 14px;
+        padding-right: 0;
+    }
+    .left-column__wrap .left-column__top .left-column__top__head .left-column__top__head__text{
+        width: 141px;
+    }
+}
+@media(max-width: 991px){
+    .menu-header-center{
+        display: none;
+    }
+    #app{
+        padding-top: 63px;
+    }
+    .menu-header-center-wrap{
+        display: none;
+    }
+    /*left-column and burger*/
+    .left-column__bot{
+        display: block;
+        padding: 10px;
+    }
+    .left-column__bot a{
+        padding: 5px 0px;
+        display: block;
+        color: #606163;
+    }
+    .left-column__bot a:first-child{
+        border-bottom: 1px solid #d2d3d7;
+    }
+    .left-column__wrap .left-column__company:last-child{
+        border-bottom: 3px solid #c7ccd0;
+    }
+    .left-column__wrap .left-column__company{
+        padding-bottom: 0;
+    }
+    .left-column{
+        position: absolute;
+        left: -100%;
+        z-index: 1;
+        width: 302px;
+        top: 60px;
+        background-color: #eaebef;
+    }
+    .left-menu{
+        transition: 1s;
+    }
+    .left-menu.active{
+        transition: 1s;
+        left: 0;
+    }
+    .left-column__wrap .left-column__top{
+        margin-bottom: 0;
+        
+        border-bottom: 3px solid #c7ccd0;
+    }
+
+
+
+    .burger {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        height: 15px;
+        width: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .burger span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        transition: 0.3s;
+        background-color: #ffffff;
+    }
+    .burger.active span{
+        transition: 0.3s;
+    }
+    .burger.active span:first-child{
+        transform: rotate(45deg);
+        position: absolute;
+        top: 8px;
+    }
+    .burger.active span:nth-child(2n){
+     opacity: 0;   
+    }
+    .burger.active span:last-child{
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 8px;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+    }
+    .header-row{
+        height: auto;
+        padding: 5px 0;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        top: 0;
+        background-image: none;
+        background-color: #84909c;
+    }
+    .authuser .authuser-top{
+        margin-top: 0;
+        display: none;
+    }
+    .authuser{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .authuser-bot {
+        position: relative;
+        
+    }
+    .authuser-bot span{
+        display: block;
+        mask-image: url('../images/comment.svg');
+        mask-size: cover; 
+        width: 20px;
+        background-color: #ffffff;
+        height: 20px;  
+    }
+    .authuser-bot div{
+        position: absolute;
+        background-color: #fe3a3b;
+        top: -10px;
+        right: -10px;
+        width: 22px;
+        height: 22px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        border-radius: 100%;
+        border: 2px solid #84909c;
+    }
+    
+}
+
+@media(max-width: 767px){
+    .personal-info-block .table tr td:first-child{
+        display: none;
+    }
+    .personal-info-block .table{
+        margin-left: -15px;
+    }
+    .cloudtag{
+        margin-top: 20px;
+    }
+    .badge-skill{
+        padding: 5px 10px;
+    }
+    .phone-block{
+        display: flex;
+        justify-content: space-between;
+    }
+    .personal-info-block .phone-block .btn-write-message{
+        width: 50%;
+    }
+    .personal-info-block .phone-block .phone-number{
+        width: 50%;
+    }
+}
+@media(max-width: 575px){
+    .personal-info-block .photo .photo-profile{
+        max-width: 100%;
+        height: auto;
+        max-height: 230px;
+    }
+    .personal-info-block .photo{
+        height: auto;
+    }
+    .personal-info-block .table td{
+        padding: 0;
+    }
+    .personal-info-block .table td b{
+        display: block;
+        margin-bottom: 30px;
+    }
+    .block h4{
+        font-size: 18px;
+        margin-right: 5px;
+    }
+    .personal-info-block .phone-block .btn-write-message{
+        font-size: 14px;
+    }
+    .personal-info-block .phone-block .phone-number{
+        font-size: 14px;
+    }
+}
+@media(max-width: 424px){
+    .left-column{
+        top: 47px;
+    }
+    .logo{
+        font-size: 25px;
+        padding: 0;
+    }
+    #app{
+        padding-top: 47px;
+    }
+    .header-row{
+        height: 47px;
+    }
+    .authuser{
+        padding-right: 10px;
+    }
+    .container{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .personal-info-block .table td{
+        font-size: 14px;
+    }
+    .badge-skill{
+        font-size: 14px;
+    }
+    .edit-badge{
+        font-size: 14px;
+    }
+    .work-position{
+        font-size: 20px;
+    }
+}
+@media(max-width: 374px){
+    .personal-info-block .table td b{
+        margin-bottom: 5px;
+    }
+    .header-wrap-flex a{
+        font-size: 14px;
+    }
+    .block h4{
+        font-size: 16px;
+    }
+    .work-list p{
+        font-size: 14px;
+    }
+    .text-description {
+        font-size: 14px;
+    }
+    .description {
+        font-size: 14px;
+    }
 }
