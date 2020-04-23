@@ -14,6 +14,9 @@ $(function(){
             thisOptions.fadeOut()
         })
     })
+
+
+
     $('.profile-slider').slick({
         infinite: true,
         slidesToShow: 3,
@@ -45,10 +48,26 @@ $(function(){
         
         
     })
+
+
     $('.authuser-top').hover(function(){
         $('.authuser-top-drop').fadeIn()
     })
     $('.authuser-top').mouseleave(function(){
         $('.authuser-top-drop').fadeOut()
+    })
+
+    $('#controle-filter').click(function(){
+        $('.top-checkbox').fadeToggle()
+    })
+
+    $('.lang-check').find('input').click(function(){
+       
+        if ($(this).prop('checked')) {
+            $('.lang-checkbox').find('input').removeAttr("disabled");
+          } else {
+            $('.lang-checkbox').find('input').attr("disabled", true);
+            $('.lang-checkbox').find('input').prop( "checked", false );
+          }
     })
 })

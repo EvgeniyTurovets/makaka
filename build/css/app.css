@@ -2140,6 +2140,297 @@ a.text-aqua:hover {
     transform: scale(1);
 }
 
+.select {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.select .select_arrow {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    pointer-events: none;
+    border: 1px solid #6a7274;
+    width: 20px;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.16, #cfcfcf), color-stop(0.79, #fcfcfc));
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(16%, #cfcfcf), color-stop(79%, #fcfcfc));
+    background-image: -webkit-linear-gradient(bottom, #cfcfcf 16%, #fcfcfc 79%);
+    background-image: -o-linear-gradient(bottom, #cfcfcf 16%, #fcfcfc 79%);
+    background-image: linear-gradient(to top, #cfcfcf 16%, #fcfcfc 79%);
+}
+
+.select .select_arrow::after {
+    margin-top: 3px;
+    content: '';
+    display: block;
+    border: 5px solid transparent;
+    /* Прозрачные границы */
+    border-top: 5px solid #000000;
+    /* Добавляем треугольник */
+}
+
+.select .list-tips {
+    background-color: #fff;
+    border: 1px solid #b6c9d6;
+    border-top: none;
+    display: none;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    position: absolute;
+    top: 40px;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    width: 100%;
+    z-index: 200;
+    height: 400px;
+    overflow: auto;
+}
+
+.select .list-tips li {
+    padding: 10px;
+}
+
+.select .list-tips li:hover {
+    background-color: #d8d7d7;
+}
+
+.search-block form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.search-form {
+    margin-bottom: 15px;
+}
+
+.form-input {
+    margin-right: 15px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.form-input .name {
+    width: 500px;
+}
+
+.form-input .town {
+    width: 245px;
+}
+
+.form-input input {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.search-form-btn {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.search-form-btn button:focus {
+    outline: none;
+}
+
+.search-form-btn button:first-child {
+    background-color: #ff7b05;
+    border: 0;
+    padding: 0 13px;
+    color: #ffffff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.search-form-btn button:first-child:hover {
+    background-color: #ec7f1f;
+    border-color: #ec7f1f;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.search-form-btn button:last-child {
+    border: 0;
+    border-bottom: 1px dotted;
+    color: #929e9e;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.search-form-btn button:last-child:hover {
+    color: #555b5b;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.control {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 15px;
+    padding-top: 1px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control_indicator {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #ffffff;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #ffffff;
+}
+
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #ffffff;
+}
+
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 5;
+    pointer-events: none;
+}
+
+.control_indicator:after {
+    -webkit-box-sizing: unset;
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+
+.control-checkbox {
+    margin-right: 10px;
+}
+
+.top-checkbox {
+    display: none;
+}
+
+.control-checkbox .control_indicator:after {
+    left: 4px;
+    top: 1px;
+    width: 4px;
+    height: 7px;
+    border: solid #2b2b2b;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}
+
+.filter {
+    padding-right: 15px;
+}
+
+.filter .filter__wrap {
+    padding: 10px;
+    display: block;
+    background-color: #f4f5f7;
+}
+
+.filter .filter__wrap .filter__item {
+    padding: 10px 0;
+    border-bottom: 1px solid #dbdcde;
+}
+
+.filter .filter__wrap .filter__item .filter__title {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.select_item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.select_item .select {
+    width: 125px;
+    margin-left: 10px;
+}
+
+.select_item .select .list-tips {
+    height: auto;
+}
+
+.select .list-tips li {
+    cursor: pointer;
+}
+
+.lang-checkbox {
+    margin-left: 20px;
+}
+
 .burger {
     display: none;
 }
