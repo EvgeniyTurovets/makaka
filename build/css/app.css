@@ -286,6 +286,7 @@ a:hover {
 
 #app {
     position: relative;
+    min-height: 100vh;
 }
 
 .right-column {
@@ -1351,6 +1352,8 @@ a.additional-search:hover {
 
 .navigation {
     padding: 20px 50px;
+    width: 540px;
+    margin: auto;
 }
 
 .navigation a {
@@ -1364,7 +1367,9 @@ a.additional-search:hover {
 }
 
 .sign-in-form {
-    margin-top: 120px;
+    width: 540px;
+    margin: auto;
+    margin-top: 60px;
     border: 1px solid #e7e8ea;
     padding: 40px 50px;
 }
@@ -3108,6 +3113,10 @@ a.text-aqua:hover {
 }
 
 @media (max-width: 767px) {
+    .sign-in-form {
+        margin-top: 30px;
+    }
+
     .list-cards .list-card {
         width: -webkit-calc(100% / 3 - 13px);
         width: calc(100% / 3 - 13px);
@@ -3231,6 +3240,25 @@ a.text-aqua:hover {
 }
 
 @media (max-width: 575px) {
+    .sign-in-form {
+        width: 100%;
+        border: 0;
+        padding: 0;
+    }
+
+    .text-help {
+        font-size: 12px;
+    }
+
+    .navigation {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .sign-in-form .title {
+        display: none;
+    }
+
     .list-cards {
         margin-left: -5px;
         margin-right: -5px;
