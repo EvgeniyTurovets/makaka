@@ -224,12 +224,22 @@ a:hover{
                 width: 100%;
                 background-color: #dde0e5;
                 text-align: center;
-                margin-top: 10px;
+                margin-top: 17px;
                 height: 30px;
                 transition: 0.3s;
                 color: #0575b7;
                 font-weight: 500;
             }
+            
+            .authuser-link::after{
+                width: 100%;
+                content: "";
+                display: block;
+                margin-top: 13px;
+                background-color: rgba(0, 0, 0, 0.2);
+                height: 1px;
+            }
+            
             .authuser-link:hover{
                 color: #000000;
                 -webkit-transition: 0.3s;
@@ -241,7 +251,11 @@ a:hover{
                 text-align: left;
                 color: #606165;
                 font-weight: 400;
+                margin-top: 14px;
                 background-color: transparent;
+            }
+            .authuser-link:last-child::after{
+                display: none;
             }
             .authuser-link:last-child:hover{
                 text-decoration: underline;
@@ -351,6 +365,10 @@ a:hover{
             color: #0575b7;
             font-weight: 500;
         }
+        a.authuser-link:first-child{
+            
+            font-weight: 700;
+        }
         .authuser-link:hover{
             color: #000000;
             -webkit-transition: 0.3s;
@@ -442,6 +460,10 @@ a:hover{
                 color: #0575b7;
                 font-weight: 500;
             }
+            a.authuser-link:first-child{
+            
+                font-weight: 700;
+            }
             a.authuser-link:hover{
                 color: #000000;
                 transition: 0.3s;
@@ -450,6 +472,7 @@ a:hover{
         }
     }
 }
+
 .search-block {
     background: #d8dbe0;
     width: 100%;
@@ -1815,7 +1838,7 @@ a.text-aqua:hover {
     display: flex;
 }
 .search-form{
-    margin-bottom: 15px;
+   
 }
 .form-input{
     
@@ -1823,7 +1846,10 @@ a.text-aqua:hover {
     width: max-content;
 }
 .form-input .name{
-    width: 500px;
+    width: 450px;
+}
+.form-input::placeholder{
+    background-color: transparent;
 }
 .form-input .town{
     width: 245px;
@@ -1840,7 +1866,10 @@ a.text-aqua:hover {
 .search-form-btn button:focus{
     outline: none;
 }
-.search-form-btn button:first-child{
+.search-form-btn-1{
+    margin-right: 80px;
+}
+.search-form-btn-1 button{
     background-color: #ff7b05;
     border: 0;
     padding: 0 13px;
@@ -1848,12 +1877,16 @@ a.text-aqua:hover {
     height: 100%;
     transition: 0.3s;
 }
-.search-form-btn button:first-child:hover {
+.search-form-btn-1 button:hover {
     background-color: #ec7f1f;
     border-color: #ec7f1f;
     transition: 0.3s;
 }
-.search-form-btn button:last-child{
+.search-form-btn-2{
+    display: flex;
+    align-items: center;
+}
+.search-form-btn-2 button{
     border: 0;
     padding: 0;
     border-bottom: 1px dashed;
@@ -1864,8 +1897,10 @@ a.text-aqua:hover {
     font-size: 16px;
     transition: 0.3s ease;
 }
-
-.search-form-btn button:last-child:hover{
+.search-form-btn-2 button:focus{
+    outline: none;
+}
+.search-form-btn-2 button:hover{
     color: #555b5b;
     transition: 0.3s ease;
 }
@@ -1926,6 +1961,10 @@ a.text-aqua:hover {
 }
 .top-checkbox{
     display: none;
+    margin-top: 15px;
+}
+.top-checkbox .control{
+    margin-bottom: 0;
 }
 .control-checkbox .control_indicator:after {
     left: 4px;
@@ -2072,6 +2111,7 @@ a.text-aqua:hover {
     }
     .authuser-bot{
         display: block;
+        margin-right: 10px;
     }
     .personal-info-block .photo{
         height: auto;
@@ -2363,7 +2403,9 @@ a.text-aqua:hover {
 }
 //список резюме
 @media(max-width: 1199px){
-    
+    .search-form-btn-1{
+        margin-right: 25px;
+    }
     .form-input .name{
         width: 350px;
     }
@@ -2375,6 +2417,22 @@ a.text-aqua:hover {
     }
 }
 @media(max-width: 991px){
+    .search-form-btn-2{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .search-block form{
+        flex-wrap: wrap;
+    }
+    .form-input{
+        flex: 1;
+        width: auto;
+    }
+    .search-form-btn-1{
+        margin-right: 0;
+        
+        width: 139px;
+    }
     .list-cards{
         margin-top: 20px;
     }
@@ -2413,17 +2471,35 @@ a.text-aqua:hover {
     .sign-in-form{
         margin-top: 30px;
     }
+    .search-form-btn-1{
+        width: 50%;
+        order: 2;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .search-form{
+        margin-bottom: 15px;
+    }
+    .search-form-btn-2{
+        width: 50%;
+        order: 1;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+    }
+    .top-checkbox .control{
+        margin-bottom: 15px;
+    }
     .list-cards .list-card{
         width: calc(100% / 3 - 13px);
         margin: 0 5px;
         max-width: none;
         box-sizing: border-box;
     }
-    .search-form-btn{
-        width: 100%;
-        flex-direction: row-reverse;
+    .form-input{
+        flex: 50%;
     }
-    .search-form-btn button:first-child{
+    .search-form-btn-1 button{
         width: 129px;
         height: 37px;
         padding: 0;
@@ -2500,6 +2576,10 @@ a.text-aqua:hover {
         border: 0;
         padding: 0;
     }
+    .form-input{
+        width: 100%;
+        flex: 100%;
+    }
     .text-help{
         font-size: 12px;
     }
@@ -2554,10 +2634,10 @@ a.text-aqua:hover {
     }
 }
 @media(max-width: 374px){
-    .search-form-btn button:last-child{
+    .search-form-btn-2 button{
         font-size: 14px;
     }
-    .search-form-btn button:first-child{
+    .search-form-btn-1 button{
         font-size: 14px;
     }
     .user-card .title a{

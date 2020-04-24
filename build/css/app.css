@@ -519,13 +519,22 @@ a:hover {
     width: 100%;
     background-color: #dde0e5;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 17px;
     height: 30px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
     color: #0575b7;
     font-weight: 500;
+}
+
+.authuser .authuser-top .authuser-top-drop .authuser-link::after {
+    width: 100%;
+    content: "";
+    display: block;
+    margin-top: 13px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 1px;
 }
 
 .authuser .authuser-top .authuser-top-drop .authuser-link:hover {
@@ -540,7 +549,12 @@ a:hover {
     text-align: left;
     color: #606165;
     font-weight: 400;
+    margin-top: 14px;
     background-color: transparent;
+}
+
+.authuser .authuser-top .authuser-top-drop .authuser-link:last-child::after {
+    display: none;
 }
 
 .authuser .authuser-top .authuser-top-drop .authuser-link:last-child:hover {
@@ -689,6 +703,10 @@ a:hover {
     font-weight: 500;
 }
 
+.left-column__wrap .left-column__top a.authuser-link:first-child {
+    font-weight: 700;
+}
+
 .left-column__wrap .left-column__top .authuser-link:hover {
     color: #000000;
     -webkit-transition: 0.3s;
@@ -833,6 +851,10 @@ a:hover {
     transition: 0.3s;
     color: #0575b7;
     font-weight: 500;
+}
+
+.left-column__wrap .left-column__top .left-column__top__head a.authuser-link:first-child {
+    font-weight: 700;
 }
 
 .left-column__wrap .left-column__top .left-column__top__head a.authuser-link:hover {
@@ -2309,10 +2331,6 @@ a.text-aqua:hover {
     display: flex;
 }
 
-.search-form {
-    margin-bottom: 15px;
-}
-
 .form-input {
     margin-right: 15px;
     width: -webkit-max-content;
@@ -2321,7 +2339,23 @@ a.text-aqua:hover {
 }
 
 .form-input .name {
-    width: 500px;
+    width: 450px;
+}
+
+.form-input::-webkit-input-placeholder {
+    background-color: transparent;
+}
+
+.form-input::-moz-placeholder {
+    background-color: transparent;
+}
+
+.form-input::-ms-input-placeholder {
+    background-color: transparent;
+}
+
+.form-input::placeholder {
+    background-color: transparent;
 }
 
 .form-input .town {
@@ -2356,7 +2390,11 @@ a.text-aqua:hover {
     outline: none;
 }
 
-.search-form-btn button:first-child {
+.search-form-btn-1 {
+    margin-right: 80px;
+}
+
+.search-form-btn-1 button {
     background-color: #ff7b05;
     border: 0;
     padding: 0 13px;
@@ -2367,7 +2405,7 @@ a.text-aqua:hover {
     transition: 0.3s;
 }
 
-.search-form-btn button:first-child:hover {
+.search-form-btn-1 button:hover {
     background-color: #ec7f1f;
     border-color: #ec7f1f;
     -webkit-transition: 0.3s;
@@ -2375,7 +2413,18 @@ a.text-aqua:hover {
     transition: 0.3s;
 }
 
-.search-form-btn button:last-child {
+.search-form-btn-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.search-form-btn-2 button {
     border: 0;
     padding: 0;
     border-bottom: 1px dashed;
@@ -2389,7 +2438,11 @@ a.text-aqua:hover {
     transition: 0.3s ease;
 }
 
-.search-form-btn button:last-child:hover {
+.search-form-btn-2 button:focus {
+    outline: none;
+}
+
+.search-form-btn-2 button:hover {
     color: #555b5b;
     -webkit-transition: 0.3s ease;
     -o-transition: 0.3s ease;
@@ -2463,6 +2516,11 @@ a.text-aqua:hover {
 
 .top-checkbox {
     display: none;
+    margin-top: 15px;
+}
+
+.top-checkbox .control {
+    margin-bottom: 0;
 }
 
 .control-checkbox .control_indicator:after {
@@ -2659,6 +2717,7 @@ a.text-aqua:hover {
 
     .authuser-bot {
         display: block;
+        margin-right: 10px;
     }
 
     .personal-info-block .photo {
@@ -3049,6 +3108,10 @@ a.text-aqua:hover {
 }
 
 @media (max-width: 1199px) {
+    .search-form-btn-1 {
+        margin-right: 25px;
+    }
+
     .form-input .name {
         width: 350px;
     }
@@ -3063,6 +3126,30 @@ a.text-aqua:hover {
 }
 
 @media (max-width: 991px) {
+    .search-form-btn-2 {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .search-block form {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .form-input {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        width: auto;
+    }
+
+    .search-form-btn-1 {
+        margin-right: 0;
+        width: 139px;
+    }
+
     .list-cards {
         margin-top: 20px;
     }
@@ -3117,6 +3204,47 @@ a.text-aqua:hover {
         margin-top: 30px;
     }
 
+    .search-form-btn-1 {
+        width: 50%;
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+
+    .search-form {
+        margin-bottom: 15px;
+    }
+
+    .search-form-btn-2 {
+        width: 50%;
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+        margin-top: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .top-checkbox .control {
+        margin-bottom: 15px;
+    }
+
     .list-cards .list-card {
         width: -webkit-calc(100% / 3 - 13px);
         width: calc(100% / 3 - 13px);
@@ -3126,16 +3254,14 @@ a.text-aqua:hover {
         box-sizing: border-box;
     }
 
-    .search-form-btn {
-        width: 100%;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: reverse;
-        -webkit-flex-direction: row-reverse;
-        -ms-flex-direction: row-reverse;
-        flex-direction: row-reverse;
+    .form-input {
+        -webkit-box-flex: 50%;
+        -webkit-flex: 50%;
+        -ms-flex: 50%;
+        flex: 50%;
     }
 
-    .search-form-btn button:first-child {
+    .search-form-btn-1 button {
         width: 129px;
         height: 37px;
         padding: 0;
@@ -3246,6 +3372,14 @@ a.text-aqua:hover {
         padding: 0;
     }
 
+    .form-input {
+        width: 100%;
+        -webkit-box-flex: 100%;
+        -webkit-flex: 100%;
+        -ms-flex: 100%;
+        flex: 100%;
+    }
+
     .text-help {
         font-size: 12px;
     }
@@ -3316,11 +3450,11 @@ a.text-aqua:hover {
 }
 
 @media (max-width: 374px) {
-    .search-form-btn button:last-child {
+    .search-form-btn-2 button {
         font-size: 14px;
     }
 
-    .search-form-btn button:first-child {
+    .search-form-btn-1 button {
         font-size: 14px;
     }
 
