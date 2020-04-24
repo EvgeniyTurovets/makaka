@@ -1323,6 +1323,7 @@ a.additional-search:hover {
 }
 
 .form-experience {
+    display: none;
     margin-left: 25px;
 }
 

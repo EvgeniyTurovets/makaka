@@ -101,4 +101,13 @@ $(function(){
         $('.text-help-is-hide-phone').text('(зараз відображається в профілі)')
       }
     })
+
+    $('.lang-check2').click(function(){
+
+      if ($(this).prop('checked')) {
+          $('.form-experience').slideDown();
+        } else {
+          $('.form-experience').slideUp();
+        }
+  })
 })
