@@ -90,4 +90,15 @@ $(function(){
             $('.lang-checkbox').find('input').prop( "checked", false );
           }
     })
+
+    $('.hide-contact-phone').click(function(){
+      if( $('#phone-number').prop( "disabled") == false){
+        $('#phone-number').prop( "disabled", true );
+        $('.text-help-is-hide-phone').text('(Зараз не відображається)')
+      }
+      else{
+        $('#phone-number').prop( "disabled", false );
+        $('.text-help-is-hide-phone').text('(зараз відображається в профілі)')
+      }
+    })
 })

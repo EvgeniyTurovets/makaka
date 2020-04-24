@@ -36,6 +36,12 @@ a:hover{
 .pull-right{
     float: right;
 }
+.pull-right span{
+    color: #1d68a7;
+}
+.pull-right span span{
+    color: #595959;
+}
 .slick-prev{
     left: -18px;
     height: 100%;
@@ -174,6 +180,68 @@ a:hover{
 .right-header-menu .profile .profile-dropdown-menu .sub-profile .edit-profile a {
     color: #0198d1;
 }
+
+
+
+
+
+.edit-profile-form{
+    margin-bottom: 40px;
+}
+.edit-form-wrap{
+    background-color: rgb(244, 245, 246);
+    padding: 20px;
+}
+.edit-profile-form .data-form .select{
+    margin-right: 10px;
+}
+.edit-profile-form .gender label{
+    width: 100%;
+}
+.edit-profile-form .gender .select{
+    width: 250px;
+}
+.edit-profile-form .select.day{
+    width: 80px;
+}
+.edit-profile-form .select.day input{
+    width: 80px;
+}
+.edit-profile-form .select.monf{
+    width: 120px;
+}
+.edit-profile-form .select.monf input{
+    width: 120px;
+}
+.edit-profile-form .select.year{
+    width: 85px;
+}
+.edit-profile-form .select.yearinput{
+    width: 85px;
+}
+
+.edit-profile-form .form-control{
+    border-radius: 0;
+}
+.edit-profile-form .photo{
+    display: flex;
+    flex-direction: column;
+}
+.edit-profile-form .photo a{
+    margin-top: 15px;
+   
+}
+.edit-profile-form a:hover{
+    text-decoration: none;
+}
+
+.form-experience{
+    margin-top: 20px;
+}
+
+
+
+
 
 
 
@@ -795,9 +863,12 @@ a.additional-search:hover {
 }
 
 .form-experience {
-    display: none;
+    
     margin-left: 25px;
 }
+
+
+
 
 .list-cards {
     display: block;
@@ -2663,3 +2734,38 @@ a.text-aqua:hover {
     }
 }
 
+
+
+@media(max-width: 1199px){
+    .pull-right{
+        width: 100%;
+    }
+}
+@media(max-width: 575px){
+    .back-link{
+        display: none;
+    }
+    .edit-form-wrap{
+        margin-top: -20px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .form-experience{margin-top: 0;}
+    .pull-right span{
+        width: 100%;
+        display: block;
+    }
+    
+}
+@media(max-width: 424px){
+    
+    .edit-profile-form .select.monf{
+        width: 100px;
+    }
+    .edit-profile-form .select.monf input{
+        width: 100px;
+    }
+    .edit-profile-form .data-form .select{
+        margin-right: 8px;
+    }
+}
