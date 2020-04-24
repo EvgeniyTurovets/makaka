@@ -303,6 +303,10 @@ a:hover {
     color: #595959;
 }
 
+.pull-right {
+    float: right;
+}
+
 .slick-prev {
     left: -18px;
     height: 100%;
@@ -478,7 +482,7 @@ a:hover {
     width: 300px;
     position: absolute;
     right: 0;
-    top: 100%;
+    top: 119%;
     z-index: 2;
     padding: 10px;
     background-color: #eaebef;
@@ -3365,6 +3369,14 @@ a.text-aqua:hover {
     }
 }
 
+.text-help {
+    font-size: 14px;
+}
+
+.navigation a {
+    font-size: 14px;
+}
+
 @media (max-width: 575px) {
     .sign-in-form {
         width: 100%;
@@ -3381,7 +3393,7 @@ a.text-aqua:hover {
     }
 
     .text-help {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .navigation {

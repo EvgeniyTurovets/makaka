@@ -50,12 +50,23 @@ $(function(){
     })
 
 
-    $('.authuser-top').hover(function(){
-        $('.authuser-top-drop').fadeIn()
-    })
-    $('.authuser-top').mouseleave(function(){
+    $('.authuser-top').click(function(){
+      if($('.authuser-top-drop').css('display') == 'block'){
         $('.authuser-top-drop').fadeOut()
+      }
+      else{
+        $('.authuser-top-drop').fadeIn()
+      }
     })
+    $(document).mouseup(function (e){ 
+      if($('.authuser-top-drop').css('display') == 'block'){
+        var div = $(".authuser-top-drop"); 
+        if (!div.is(e.target) 
+            && div.has(e.target).length === 0) { 
+          div.fadeOut()
+        }
+      }
+    });
 
     $('#controle-filter').click(function(){
       if($(window).width() > 767){
