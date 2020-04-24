@@ -2345,6 +2345,7 @@ a.text-aqua:hover {
     .filter .filter__wrap{
         display: flex;
         flex-wrap: wrap;
+        padding: 10px 15px;
     }
     .filter__item{
         width: calc(100% / 3);

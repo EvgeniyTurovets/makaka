@@ -3009,6 +3009,7 @@ a.text-aqua:hover {
         -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        padding: 10px 15px;
     }
 
     .filter__item {
