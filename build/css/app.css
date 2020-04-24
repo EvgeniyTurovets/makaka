@@ -276,6 +276,14 @@ body, html {
     min-width: 320px;
 }
 
+a {
+    color: #3490dc;
+}
+
+a:hover {
+    color: #1d68a7;
+}
+
 #app {
     position: relative;
 }
@@ -1005,6 +1013,14 @@ a.additional-search:hover {
     font-weight: 600;
 }
 
+.user-card .title a {
+    color: #3490dc;
+}
+
+.user-card .title a:hover {
+    color: #1d68a7;
+}
+
 .user-card__left {
     width: 85%;
     padding-right: 15px;
@@ -1020,6 +1036,25 @@ a.additional-search:hover {
 
 .background-white-smoke {
     background-color: #f5f5f5;
+}
+
+.edit-skill {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.edit-skill a {
+    color: #3490dc;
+}
+
+.edit-skill a:hover {
+    color: #1d68a7;
 }
 
 .btn-green {
@@ -1055,8 +1090,13 @@ a.additional-search:hover {
     margin-right: 10px;
 }
 
+.work-position a {
+    color: #3490dc;
+}
+
 .work-position a:hover {
     text-decoration: none;
+    color: #1d68a7;
 }
 
 .block .action-btn {
@@ -2245,7 +2285,7 @@ a.text-aqua:hover {
     min-width: max-content;
     width: 100%;
     z-index: 200;
-    height: 400px;
+    height: auto;
     overflow: auto;
 }
 
@@ -2297,6 +2337,10 @@ a.text-aqua:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -2312,6 +2356,7 @@ a.text-aqua:hover {
     border: 0;
     padding: 0 13px;
     color: #ffffff;
+    height: 100%;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -2327,9 +2372,11 @@ a.text-aqua:hover {
 
 .search-form-btn button:last-child {
     border: 0;
-    border-bottom: 1px dotted;
+    padding: 0;
+    border-bottom: 1px dashed;
     color: #929e9e;
     display: inline-block;
+    height: 25px;
     background-color: transparent;
     font-size: 16px;
     -webkit-transition: 0.3s ease;
@@ -2427,6 +2474,11 @@ a.text-aqua:hover {
 
 .control-checkbox input:disabled ~ .control_indicator:after {
     border-color: #7b7b7b;
+}
+
+.filter .form-control {
+    -webkit-border-radius: 0;
+    border-radius: 0;
 }
 
 .filter {
