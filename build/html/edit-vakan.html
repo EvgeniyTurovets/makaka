@@ -247,8 +247,93 @@
                     </div>
                 </div>
                 <div class="col-lg-9 col-12 right-column">
-                    <div style="background-color: rgb(244, 245, 246); padding: 20px;"><form method="POST" action="http://159.224.240.244/profile/resume/store/full-time-resume" accept-charset="UTF-8"><input name="_token" type="hidden" value="84eQJ1fWY9y8Idgrq2HPGSpkDp8qaKMAorPFo01z"> <div class="form-group"><label><b>Посада<span style="color: red;">*</span>:</b></label> <div data-v-cf2b806e="" class="autocomplete"><input data-v-cf2b806e="" name="position" type="text" autocomplete="off" placeholder="Назва посади" class="name-position-search form-control not-radius"> <div data-v-cf2b806e="" class="icon-stack"><button data-v-cf2b806e="" type="button" aria-label="Close" class="close" style="display: none;"><span data-v-cf2b806e="" aria-hidden="true">×</span></button></div> <ul data-v-cf2b806e="" class="autocomplete-results" style="display: none;"></ul></div></div> <div class="form-group"><label><b>Виберіть де б ви хотіли працювати<span style="color: red;">*</span>:</b></label> <select name="work_location" class="form-control not-radius col-md-4 work-location"><option value="0">В Україні</option><option value="1">За кордоном</option><option value="2">Робота у морі</option></select></div> <div class="form-group city-block"><label><b>Місто<span style="color: red;">*</span>:</b></label> <input data-url="http://159.224.240.244/api/get-cities" type="text" name="city[]" value="" class="form-control not-radius col-md-4 city-input ui-autocomplete-input" autocomplete="off"></div> <div class="form-group add-city-block"><a href="#" class="add-city">Додати ще одне місто</a></div> <div class="work-location-is-border" style="display: none;"><div class="form-group country-block"><label><b>Країна<span style="color: red;">*</span>:</b></label> <input type="text" name="country[]" value="" class="form-control not-radius col-md-4 country-input ui-autocomplete-input" autocomplete="off"></div> <div class="form-group add-country-block"><a href="#" class="add-country">Додати ще одну країну</a></div></div> <div class="form-group type-employment"><label><b>Вид зайнятості<span style="color: red;">*</span>:</b></label> <div class="form-inline"><input name="full_time" type="checkbox" value="1"> <span class="margin-l-10">повна зайнятість</span></div> <div class="form-inline"><input name="not_full_time" type="checkbox" value="1"> <span class="margin-l-10">неповна зайнятість</span></div> <div class="form-inline"><input name="remote_work" type="checkbox" value="1"> <span class="margin-l-10">віддалена робота</span></div></div> <div class="form-group"><label><b>Заробітна плата:</b></label> <div class="form-inline"><input type="text" value="" name="salary" class="form-control not-radius col-md-2"> <span class="margin-l-10">грн в місяц</span></div></div> <div class="form-group"><label><b>Опис:</b></label> <textarea name="description" cols="50" rows="10" class="form-control not-radius"></textarea></div> <div class="form-group text-right"><input type="submit" value="Зберегти" class="btn btn-primary not-radius"> <a href="http://159.224.240.244/profile/show/20/full-time-work" class="btn btn-white not-radius margin-l-10">Повернутися</a></div></form></div></div>
+                    <div class="edit-form-wrap">
+                        <form accept-charset="UTF-8" action="http://159.224.240.244/profile/resume/store/full-time-resume" method="post">
+                            <input name="_token" type="hidden" value="84eQJ1fWY9y8Idgrq2HPGSpkDp8qaKMAorPFo01z">
+                            <div class="form-group">
+                                <label><b>Посада<span style="color: red;">*</span>:</b></label>
+                                <div class="autocomplete" data-v-cf2b806e="">
+                                    <input autocomplete="off" class="name-position-search form-control not-radius" data-v-cf2b806e="" name="position" placeholder="Назва посади" type="text">
+                                    <div class="icon-stack" data-v-cf2b806e="">
+                                        <button aria-label="Close" class="close" data-v-cf2b806e="" style="display: none;" type="button"><span aria-hidden="true" data-v-cf2b806e="">×</span></button>
+                                    </div>
+                                    <ul class="autocomplete-results" data-v-cf2b806e="" style="display: none;"></ul>
+                                </div>
+                            </div>
+                            <div class="form-group edit-town" >
+                                <label><b>Виберіть де б ви хотіли працювати<span style="color: red;">*</span>:</b></label>
+                                <div class="select">
+                                    <input  type="text" autocomplete="off" value="В Україні" placeholder="В Україні" class="js-main-region form-control" id="city">
+                                      
+                                    <ul class="list-tips" role="listbox" style="top: 40px; left: 0px; display: none;">
+                                      <li role="option">За кордоном</li>
+                                      <li role="option">В Україні</li>
+                                      <li role="option">Робота в морі</li>
+                                      
+                                    </ul>
+                                    
+                                    <div class="select_arrow"></div>
+                                  </div>
+                            </div>
+                            <div class="form-group city-block">
+                                <label><b>Місто<span style="color: red;">*</span>:</b></label>
+                                <div class="select">
+                                    <input  type="text" autocomplete="off" value="В Україні" placeholder="В Україні" class="js-main-region form-control" id="city">
+                                      
+                                    <ul class="list-tips" role="listbox" style="top: 40px; left: 0px; display: none;">
+                                      <li role="option">Вінниця</li>
+                                      <li role="option">Києв</li>
+                                      <li role="option">Одесса</li>
+                                      
+                                    </ul>
+                                    
+                                    <div class="select_arrow"></div>
+                                    
+                                </div>
                                 
+                            </div>
+                            <div class="form-group add-city-block">
+                                <span class="add-city">Додати ще одне місто</span>
+                            </div>
+                           
+                            <div class="form-group type-employment">
+                                <label><b>Вид зайнятості<span style="color: red;">*</span>:</b></label>
+                                
+                                    <div class="control-group">
+                                        <label class="control control-checkbox">
+                                            Повна зайнятість
+                                                <input type="checkbox" class="lang-check2">
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                        <label class="control control-checkbox">
+                                            неповна зайнятість
+                                                <input type="checkbox" class="lang-check2">
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                        <label class="control control-checkbox">
+                                            віддалена робота
+                                                <input type="checkbox" class="lang-check2">
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </div>
+                               
+                               
+                            </div>
+                            <div class="form-group cash">
+                                <label><b>Заробітна плата:</b></label>
+                                <div class="form-inline">
+                                    <input class="form-control not-radius col-md-2" name="salary" type="text" value=""> <span class="margin-l-10">грн в місяц</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label><b>Опис:</b></label> 
+                                <textarea class="form-control not-radius" cols="50" name="description" rows="10"></textarea>
+                            </div>
+                            <div class="form-group text-right">
+                                <input class="btn btn-primary not-radius" type="submit" value="Зберегти"> <a class="btn btn-white not-radius margin-l-10" href="http://159.224.240.244/profile/show/20/full-time-work">Повернутися</a>
+                            </div>
+                        </form>
+                    </div>        
                 </div>
             </div>
         </div>

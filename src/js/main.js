@@ -109,5 +109,12 @@ $(function(){
         } else {
           $('.form-experience').slideUp();
         }
-  })
+    })
+
+    $('.add-city').click(function(){
+      $('.city-block').append('<div class="select"><input  type="text" autocomplete="off" value="В Україні" placeholder="В Україні" class="js-main-region form-control" id="city"><ul class="list-tips" role="listbox" style="top: 40px; left: 0px; display: none;"><li role="option">Вінниця</li><li role="option">Києв</li><li role="option">Одесса</li></ul><div class="select_arrow"></div><div class="trash"></div></div>')
+    })
+    $(document).on('click touchstart', '.trash', function(){ 
+      $(this).parents('.select').remove()
+    });
 })
