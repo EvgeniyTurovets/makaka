@@ -3072,7 +3072,16 @@ $(function(){
     })
 
     $('#controle-filter').click(function(){
+      if($(window).width() > 767){
         $('.top-checkbox').fadeToggle()
+      }
+      if($(window).width() < 768){
+        $('.top-checkbox').slideToggle()
+      }
+      if($(window).width() < 992){
+        $('.left-filter').slideToggle()
+      }
+        
     })
 
     $('.lang-check').find('input').click(function(){

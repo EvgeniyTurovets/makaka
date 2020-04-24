@@ -27,13 +27,13 @@
                 <div class="col-lg-8 col-0 menu-header-center-wrap">
                     <div class="menu-header-center">
                         <div class="item">
-                            <a href="../../search/resume/Вся Украина-Все.html">Знайти резюме</a>
+                            <a href="resume.html">Знайти резюме</a>
                         </div>
                         <div class="item">
-                            <a href="../../search/profiles/Вся Украина-Все.html">Пошук за профілем</a>
+                            <a href="profile.html">Пошук за профілем</a>
                         </div>
                         <div class="item">
-                            <a href="../../search/vacancy/Вся Украина-Все.html">Знайти роботу</a>
+                            <a href="resume.html">Знайти роботу</a>
                         </div>
                     </div>
                 </div>
@@ -216,31 +216,34 @@
 
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-12">
-                    <div class="top-checkbox">
-                        <div class="control-group d-flex">
-                            <label class="control control-checkbox">
-                                Тільки у заголовку
-                                    <input type="checkbox" checked="checked" />
-                                <div class="control_indicator"></div>
-                            </label>
-                            <label class="control control-checkbox">
-                                Включно з синонімами
-                                    <input type="checkbox" />
-                                <div class="control_indicator"></div>
-                            </label>
-                        </div>
+                <div class="top-checkbox">
+                    <div class="col-12">
+                        
+                            <div class="control-group d-flex">
+                                <label class="control control-checkbox">
+                                    Тільки у заголовку
+                                        <input type="checkbox" checked="checked" />
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <label class="control control-checkbox">
+                                    Включно з синонімами
+                                        <input type="checkbox" />
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-        <div class="container margin-t-20">
+    <div class="main-content">
+        <div class="container">
         <div class="row">
-            <div class="col-md-3 no-padding">
+            <div class="col-lg-3 col-12 no-padding left-filter">
 
                 <div class="sign-in-mini-form" style="display: none;">
                     <div class="sub-title">
@@ -272,7 +275,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="left-column__wrap">
+                <div class="left-column__wrap top-filter">
                     <div class="left-column__top">
                         <div href="" class="left-column__top__head">
                             <a href="">
@@ -480,26 +483,28 @@
                     </forma>
                 </div>
             </div>
-            <div class="col-md-9">
-                <main id="pjax-container">
+            <div class="col-lg-9 col-12">
+                <main class="main">
                     <div class="total-result">
                         <h1 class="header">Робота в Україні </h1>
                     </div>
-                                            <div class="user-card " v-on:click="userCardClick">
-                            <div class="row">
-                                <div class="col-md-10">
+            
+                        <div class="user-card">
+                            <div class="d-flex">
+                                <div class="user-card__left">
                                     <div class="title">
-                                        <a href="../../profile/show-resume/8.html">Суши-повар</a>
-                                        <span class="text-muted">15000 грн</span>
+                                        <a href="../../profile/show-resume/13.html">Менеджер по безопасности</a>
+                                        <span class="text-muted">20000 грн</span>
                                     </div>
                                     <div class="info">
-                                        <span class="name">Вася Васичкин</span>
-                                        <span class="text-muted"> · </span>
-                                                                                    <span class="age">35 лет</span>
-                                            <span class="text-muted"> · </span>
-                                                                                <span class="city">За кордоном</span>
+                                        <span class="name">Василиса Васильева</span>
+                                       
+                                        <span class="city">Днепр</span>
+                                        
+                                        <span class="age">35 лет</span>
                                     </div>
                                     <div class="description">
+                                       
                                         Желательна работа с Laravel (желаемая зарплата указана для такой вакансии, для остальных от 20000 гр).
                                         сушист.
 
@@ -508,230 +513,235 @@
                                         Html, Css, Bootstrap, Php, Javascript (Jquery), Mysql. Opencart, Yii2. Начально знаком с Laravel, Kohana.
 
                                         Обязателен, умею организовать свою работу, быстро осваиваю но...
+                                    
                                     </div>
                                 </div>
-                                <div class="col-md-2">
-                                    <img src="../images/123-1.jpg">
-                                    <div class="text-muted small-font">
-                                        5 днів тому
-                                    </div>
+                                <div class="user-card__right">
+                                    <a href="" class="user-card__portret">
+                                        <img src="../images/123-1.jpg">
+                                        <div class="text-muted small-font">
+                                            11 днів тому
+                                        </div>
+                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
-                                            <div class="user-card  margin-t-10 " v-on:click="userCardClick">
-                            <div class="row">
-                                <div class="col-md-10">
+                        <div class="user-card">
+                            <div class="d-flex">
+                                <div class="user-card__left">
                                     <div class="title">
                                         <a href="../../profile/show-resume/13.html">Сварщик</a>
                                         <span class="text-muted">20000 грн</span>
                                     </div>
                                     <div class="info">
                                         <span class="name">Василиса Васильева</span>
-                                        <span class="text-muted"> · </span>
-                                                                                <span class="city">Днепр</span>
+                                        <span class="city">Днепр</span>
+                                        <span class="age">35 лет</span>
                                     </div>
                                     <div class="description">
                                         Нужен сварщик
                                     </div>
                                 </div>
-                                <div class="col-md-2">
-                                    <img src="../images/123-1.jpg">
-                                    <div class="text-muted small-font">
-                                        11 днів тому
-                                    </div>
+                                <div class="user-card__right">
+                                    <a href="" class="user-card__portret">
+                                        <img src="../images/123-1.jpg">
+                                        <div class="text-muted small-font">
+                                            11 днів тому
+                                        </div>
+                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
-                                            <div class="user-card  margin-t-10 " v-on:click="userCardClick">
-                            <div class="row">
-                                <div class="col-md-10">
+                        <div class="user-card">
+                            <div class="d-flex">
+                                <div class="user-card__left">
                                     <div class="title">
-                                        <a href="../../profile/show-resume/12.html">Сварщик</a>
+                                        <a href="../../profile/show-resume/13.html">Сварщик</a>
                                         <span class="text-muted">20000 грн</span>
                                     </div>
                                     <div class="info">
-                                        <span class="name">Дмитрий Ильин</span>
-                                        <span class="text-muted"> · </span>
-                                                                                    <span class="age">40 лет</span>
-                                            <span class="text-muted"> · </span>
-                                                                                <span class="city">Днепр</span>
+                                        <span class="name">Василиса Васильева</span>
+                                        <span class="city">Днепр</span>
+                                        <span class="age">35 лет</span>
                                     </div>
                                     <div class="description">
-                                        Владею всеми техниками сварки.
+                                        Нужен сварщик
                                     </div>
                                 </div>
-                                <div class="col-md-2">
-                                    <img src="../images/123-1.jpg">
-                                    <div class="text-muted small-font">
-                                        11 днів тому
-                                    </div>
+                                <div class="user-card__right">
+                                    <a href="" class="user-card__portret">
+                                        <img src="../images/123-1.jpg">
+                                        <div class="text-muted small-font">
+                                            11 днів тому
+                                        </div>
+                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
-                                            <div class="user-card  margin-t-10 " v-on:click="userCardClick">
-                            <div class="row">
-                                <div class="col-md-10">
+                        <div class="user-card">
+                            <div class="d-flex">
+                                <div class="user-card__left">
                                     <div class="title">
-                                        <a href="../../profile/show-resume/9.html">IT-specialist</a>
-                                        <span class="text-muted">1500 грн</span>
+                                        <a href="../../profile/show-resume/13.html">Сварщик</a>
+                                        <span class="text-muted">20000 грн</span>
                                     </div>
                                     <div class="info">
-                                        <span class="name">Вася Васичкин</span>
-                                        <span class="text-muted"> · </span>
-                                                                                    <span class="age">35 лет</span>
-                                            <span class="text-muted"> · </span>
-                                                                                <span class="city">Днепр</span>
+                                        <span class="name">Василиса Васильева</span>
+                                        <span class="city">Днепр</span>
+                                        <span class="age">35 лет</span>
                                     </div>
                                     <div class="description">
-                                        Фахівець з ІТ
+                                        Нужен сварщик
                                     </div>
                                 </div>
-                                <div class="col-md-2">
-                                    <img src="../images/123-1.jpg">
-                                    <div class="text-muted small-font">
-                                        24 дня тому
-                                    </div>
+                                <div class="user-card__right">
+                                    <a href="" class="user-card__portret">
+                                        <img src="../images/123-1.jpg">
+                                        <div class="text-muted small-font">
+                                            11 днів тому
+                                        </div>
+                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
-                                            <div class="user-card  margin-t-10 " v-on:click="userCardClick">
-                            <div class="row">
-                                <div class="col-md-10">
+                        <div class="user-card">
+                            <div class="d-flex">
+                                <div class="user-card__left">
                                     <div class="title">
-                                        <a href="../../profile/show-resume/10.html">Сброрщик машин</a>
-                                        <span class="text-muted">1200 грн</span>
+                                        <a href="../../profile/show-resume/13.html">Сварщик</a>
+                                        <span class="text-muted">20000 грн</span>
                                     </div>
                                     <div class="info">
-                                        <span class="name">Александр Поисковикович</span>
-                                        <span class="text-muted"> · </span>
-                                                                                    <span class="age">17 лет</span>
-                                            <span class="text-muted"> · </span>
-                                                                                <span class="city">За кордоном</span>
+                                        <span class="name">Василиса Васильева</span>
+                                        <span class="city">Днепр</span>
+                                        <span class="age">35 лет</span>
                                     </div>
                                     <div class="description">
-                                        Сброщик
+                                        Нужен сварщик
                                     </div>
                                 </div>
-                                <div class="col-md-2">
-                                    <img src="../images/123-1.jpg">
-                                    <div class="text-muted small-font">
-                                        24 дня тому
-                                    </div>
+                                <div class="user-card__right">
+                                    <a href="" class="user-card__portret">
+                                        <img src="../images/123-1.jpg">
+                                        <div class="text-muted small-font">
+                                            11 днів тому
+                                        </div>
+                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
-                                            <div class="user-card  margin-t-10 " v-on:click="userCardClick">
-                            <div class="row">
-                                <div class="col-md-10">
+                        <div class="user-card">
+                            <div class="d-flex">
+                                <div class="user-card__left">
                                     <div class="title">
-                                        <a href="../../profile/show-resume/11.html">Кукарачча</a>
-                                        <span class="text-muted">500 грн</span>
+                                        <a href="../../profile/show-resume/13.html">Сварщик</a>
+                                        <span class="text-muted">20000 грн</span>
                                     </div>
                                     <div class="info">
-                                        <span class="name">Александр Поисковикович</span>
-                                        <span class="text-muted"> · </span>
-                                                                                    <span class="age">17 лет</span>
-                                            <span class="text-muted"> · </span>
-                                                                                <span class="city">Робота у морі</span>
+                                        <span class="name">Василиса Васильева</span>
+                                        <span class="city">Днепр</span>
+                                        <span class="age">35 лет</span>
                                     </div>
                                     <div class="description">
-                                        Кукарачча
+                                        Нужен сварщик
                                     </div>
                                 </div>
-                                <div class="col-md-2">
-                                    <img src="../images/123-1.jpg">
-                                    <div class="text-muted small-font">
-                                        24 дня тому
-                                    </div>
+                                <div class="user-card__right">
+                                    <a href="" class="user-card__portret">
+                                        <img src="../images/123-1.jpg">
+                                        <div class="text-muted small-font">
+                                            11 днів тому
+                                        </div>
+                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
-                                            <div class="user-card  margin-t-10 " v-on:click="userCardClick">
-                            <div class="row">
-                                <div class="col-md-10">
+                        <div class="user-card">
+                            <div class="d-flex">
+                                <div class="user-card__left">
                                     <div class="title">
-                                        <a href="../../profile/show-resume/4.html">Воспитатель</a>
-                                        <span class="text-muted">10000 грн</span>
+                                        <a href="../../profile/show-resume/13.html">Сварщик</a>
+                                        <span class="text-muted">20000 грн</span>
                                     </div>
                                     <div class="info">
-                                        <span class="name">Lev Bazdyrev</span>
-                                        <span class="text-muted"> · </span>
-                                                                                    <span class="age">24 лет</span>
-                                            <span class="text-muted"> · </span>
-                                                                                <span class="city">Робота у морі</span>
+                                        <span class="name">Василиса Васильева</span>
+                                        <span class="city">Днепр</span>
+                                        <span class="age">35 лет</span>
                                     </div>
                                     <div class="description">
-                                        Хочу воспитывать негретёнков
+                                        Нужен сварщик
                                     </div>
                                 </div>
-                                <div class="col-md-2">
-                                    <img src="../images/123-1.jpg">
-                                    <div class="text-muted small-font">
-                                        1 місяць тому
-                                    </div>
+                                <div class="user-card__right">
+                                    <a href="" class="user-card__portret">
+                                        <img src="../images/123-1.jpg">
+                                        <div class="text-muted small-font">
+                                            11 днів тому
+                                        </div>
+                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
-                                            <div class="user-card  margin-t-10 " v-on:click="userCardClick">
-                            <div class="row">
-                                <div class="col-md-10">
+                        <div class="user-card">
+                            <div class="d-flex">
+                                <div class="user-card__left">
                                     <div class="title">
-                                        <a href="../../profile/show-resume/6.html">Менеджер IT-безопасности</a>
-                                        <span class="text-muted">35000 грн</span>
+                                        <a href="../../profile/show-resume/13.html">Сварщик</a>
+                                        <span class="text-muted">20000 грн</span>
                                     </div>
                                     <div class="info">
-                                        <span class="name">Lev Bazdyrev</span>
-                                        <span class="text-muted"> · </span>
-                                                                                    <span class="age">24 лет</span>
-                                            <span class="text-muted"> · </span>
-                                                                                <span class="city">За кордоном</span>
+                                        <span class="name">Василиса Васильева</span>
+                                        <span class="city">Днепр</span>
+                                        <span class="age">35 лет</span>
                                     </div>
                                     <div class="description">
-                                        
+                                        Нужен сварщик
                                     </div>
                                 </div>
-                                <div class="col-md-2">
-                                    <img src="../images/123-1.jpg">
-                                    <div class="text-muted small-font">
-                                        1 місяць тому
-                                    </div>
+                                <div class="user-card__right">
+                                    <a href="" class="user-card__portret">
+                                        <img src="../images/123-1.jpg">
+                                        <div class="text-muted small-font">
+                                            11 днів тому
+                                        </div>
+                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
-                                            <div class="user-card  margin-t-10 " v-on:click="userCardClick">
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <div class="title">
-                                        <a href="../../profile/show-resume/3.html">IT-инженер</a>
-                                        <span class="text-muted">180000 грн</span>
-                                    </div>
-                                    <div class="info">
-                                        <span class="name">Lev Bazdyrev</span>
-                                        <span class="text-muted"> · </span>
-                                                                                    <span class="age">24 лет</span>
-                                            <span class="text-muted"> · </span>
-                                                                                <span class="city">Днепр, Запорожье, Киев</span>
-                                    </div>
-                                    <div class="description">
-                                        Хочу работать программистом
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <img src="../images/123-1.jpg">
-                                    <div class="text-muted small-font">
-                                        1 місяць тому
-                                    </div>
-                                </div>
+                        
+                        
+                    <div class="pagination">
+                        <div class="pagination__wrap">
+                            <div class="pagination__flex">
+                                <a href="" class="pagination__prev">Попередня</a>
+                                <ul>
+                                    <li><a href="">1</a></li>
+                                    <li><a href="">5</a></li>
+                                    <li><a href="">6</a></li>
+                                    <li class="active"><a href="">7</a></li>
+                                    <li><a href="">8</a></li>
+                                    <li><a href="">9</a></li>
+                                    <li><a href="">34</a></li>
+                                </ul>
+                                <a href="" class="pagination__next">Наступна</a>
                             </div>
-                        </div>
-                                        <div class="row margin-t-20">
-                        <div class="col-md-12 offset-md-5">
-                            
                         </div>
                     </div>
                 </main>
+             </div>
+                   
+                
             </div>
         </div>
+    </div>
     </div>
 </div>
 <script src="../js/main.js"></script>
