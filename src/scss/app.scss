@@ -801,15 +801,16 @@ a.additional-search:hover {
 
 .list-cards .list-card .profile-view .profile-details {
     width: 100%;
+    height: 60px;
 }
 
 .list-cards .list-card .profile-view .profile-details .profile-name {
-    line-height: 2rem !important;
-    max-height: 2rem;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 100%;
-    -ms-flex: 1 100%;
+   margin-top: 5px;
+    height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     flex: 1 100%;
+    padding: 0 5px;
     font-size: 14px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.9);
@@ -818,16 +819,15 @@ a.additional-search:hover {
 }
 
 .list-cards .list-card .profile-view .profile-details .experience {
-    line-height: 1.6rem;
     font-size: 12px;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 100%;
-    -ms-flex: 1 100%;
+    padding: 0 5px;
     flex: 1 100%;
     display: block;
     overflow: hidden;
     word-break: break-word;
+    height: 33px;
     max-height: 3.2rem;
+    text-overflow: ellipsis;
 }
 
 .list-cards .list-card .profile-view .action-container {
@@ -2006,6 +2006,21 @@ a.text-aqua:hover {
 .left-menu{
     display: none;
 }
+
+
+.right-header-menu {
+    
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.right-header-menu span{
+    margin: 0 5px;
+}
+.sign-in-mini-form{
+    padding-right: 15px;
+}
 @media(max-width: 1199px){
     .left-column__wrap{
         font-size: 14px;
@@ -2016,6 +2031,9 @@ a.text-aqua:hover {
     }
 }
 @media(max-width: 991px){
+    .sign-in-mini-form{
+        display: none;
+    }
     .authuser-bot{
         display: block;
     }
@@ -2309,6 +2327,7 @@ a.text-aqua:hover {
 }
 //список резюме
 @media(max-width: 1199px){
+    
     .form-input .name{
         width: 350px;
     }
@@ -2320,6 +2339,9 @@ a.text-aqua:hover {
     }
 }
 @media(max-width: 991px){
+    .list-cards{
+        margin-top: 20px;
+    }
     .form-input .name{
         width: 100%;
     }
@@ -2352,6 +2374,12 @@ a.text-aqua:hover {
     }
 }
 @media(max-width: 767px){
+    .list-cards .list-card{
+        width: calc(100% / 3 - 13px);
+        margin: 0 5px;
+        max-width: none;
+        box-sizing: border-box;
+    }
     .search-form-btn{
         width: 100%;
         flex-direction: row-reverse;
@@ -2428,6 +2456,15 @@ a.text-aqua:hover {
     }
 }
 @media(max-width: 575px){
+    .list-cards{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .list-cards .list-card{
+        width: calc(100% / 2 - 13px);
+        margin: 0 5px;
+    }
     .pagination ul li{
         display: none;
     }
@@ -2453,7 +2490,14 @@ a.text-aqua:hover {
     .form-input:first-child{
         padding-right: 0;
     }
-    
+    .right-header-menu {
+        font-size: 14px;
+       
+        
+    }
+    .right-header-menu span{
+        margin: 0 5px;
+    }
 }
 @media(max-width: 374px){
     .search-form-btn button:last-child{
@@ -2474,3 +2518,4 @@ a.text-aqua:hover {
         font-size: 14px;
     }
 }
+
