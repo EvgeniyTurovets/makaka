@@ -358,6 +358,9 @@
 
 .layout-chat-main-container #room-main-body {
     width: 70%;
+    padding: 0;
+    max-width: none;
+    height: 100%;
 }
 
 .room-body-head {
@@ -377,6 +380,18 @@
 }
 
 @media (max-width: 991px) {
+    .left-menu.active .left-column__wrap {
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        overflow: scroll;
+        padding-bottom: 55px;
+    }
+
+    .left-menu.active {
+        overflow: scroll;
+    }
+
     .layout-chat-main-container {
         margin-top: 0;
     }
@@ -437,6 +452,11 @@
         width: 100%;
         position: absolute;
         left: 0;
+        height: 100%;
+    }
+
+    .room-list {
+        height: 100%;
     }
 
     #story-box {
@@ -595,10 +615,6 @@
     .composer-panel button {
         right: 13px;
         top: 21px;
-    }
-
-    .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .composer-panel {
-        display: fixed;
     }
 }
 
