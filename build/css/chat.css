@@ -379,6 +379,10 @@
     width: 24px;
 }
 
+.layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .composer-panel textarea {
+    padding-right: 40px;
+}
+
 @media (max-width: 991px) {
     .left-menu.active .left-column__wrap {
         height: -webkit-max-content;
