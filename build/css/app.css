@@ -2035,10 +2035,6 @@ a.text-aqua:hover {
     text-decoration: unset;
 }
 
-.btn:hover {
-    color: #fff;
-}
-
 .photos-block img {
     margin-top: 10px;
     width: 250px;
