@@ -2032,7 +2032,7 @@ a.text-aqua:hover {
 }
 
 .company-info .phone-number:hover {
-    text-decoration: unset;
+    text-decoratiАon: unset;
 }
 
 .photos-block img {
@@ -2424,20 +2424,20 @@ a.text-aqua:hover {
     width: 450px;
 }
 
-.form-input::-webkit-input-placeholder {
-    background-color: transparent;
+.form-input input::-webkit-input-placeholder {
+    color: #49505787;
 }
 
-.form-input::-moz-placeholder {
-    background-color: transparent;
+.form-input input::-moz-placeholder {
+    color: #49505787;
 }
 
-.form-input::-ms-input-placeholder {
-    background-color: transparent;
+.form-input input::-ms-input-placeholder {
+    color: #49505787;
 }
 
-.form-input::placeholder {
-    background-color: transparent;
+.form-input input::placeholder {
+    color: #49505787;
 }
 
 .form-input .town {

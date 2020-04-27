@@ -1552,7 +1552,7 @@ a.text-aqua:hover {
 }
 
 .company-info .phone-number:hover {
-    text-decoration: unset;
+    text-decoratiАon: unset;
 }
 
 
@@ -1921,8 +1921,8 @@ a.text-aqua:hover {
 .form-input .name{
     width: 450px;
 }
-.form-input::placeholder{
-    background-color: transparent;
+.form-input input::placeholder{
+    color: #49505787;
 }
 .form-input .town{
     width: 245px;
