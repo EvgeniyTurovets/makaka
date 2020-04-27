@@ -495,11 +495,13 @@
     right: 13px;
     top: 21px;
   }
-  
+  .chat-column{
+    height: 100%;
+  }
 }
 @media(max-width: 424px){
-  .layout-chat-main-container #room-main-body {
-    height: calc(100vh - 95px);
+  .fill {
+    height: calc(100vh - 42px);
   }
   .room-body-head__left{
     left: 5px;

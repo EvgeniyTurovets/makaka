@@ -3148,11 +3148,22 @@ $(function(){
     });
 
     //кастомизация скрола
+    if($(window).width() < 576){
+      $(document).ready(function() {
+        $(".boxscroll").niceScroll({
+          cursorborder:'none',
+          cursorcolor:"#bfbfbf",
+          touchbehavior:true,
+          cursoropacitymin:1,
+          boxzoom:true
+        });
+      });
+    }
     $(document).ready(function() {
       $(".boxscroll").niceScroll({
         cursorborder:'none',
         cursorcolor:"#bfbfbf",
-        touchbehavior:true,
+       
         cursoropacitymin:1,
         boxzoom:true
       });
@@ -3160,15 +3171,15 @@ $(function(){
     $(window).scroll(function() {
       $(".boxscroll").getNiceScroll().resize();
     });
-    $(window).resize(function(){
+    
+    $(window).on('resize', function(){
       $(".boxscroll").getNiceScroll().resize();
-    })
-
+    });
 
     //открыть чат
     
       $('.room-list-item').click(function(){
-        if($(window).width() < 992){
+        if($(window).width() < 576){
           $('#room-nav').animate({"left": '-100%'}, 200);
         
           setTimeout(openBody, 500);
@@ -3180,7 +3191,7 @@ $(function(){
       })
 
       $('.room-body-head__left').click(function(){
-        if($(window).width() < 992){
+        if($(window).width() < 576){
         $('#room-main-body').animate({"right": '-100%'}, 200);
         $('.room-body-head').fadeOut(200)
         setTimeout(openBody, 500);
