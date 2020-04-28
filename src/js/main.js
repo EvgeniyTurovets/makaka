@@ -177,27 +177,27 @@ $(function(){
     
       $('.room-list-item').click(function(){
         if($(window).width() < 576){
-          $('#room-nav').animate({"left": '-100%'}, 200);
+          $('#room-nav').fadeOut(200)
         
           setTimeout(openBody, 500);
           function openBody() {
             
             $('.composer-panel').fadeIn(200)
             $('.room-body-head').fadeIn(200)
-            $('#room-main-body').animate({"right": '0'}, 200);
+            $('#room-main-body').fadeIn(200)
           }
        }
       })
 
       $('.room-body-head__left').click(function(){
         if($(window).width() < 576){
-        $('#room-main-body').animate({"right": '-100%'}, 200);
+        $('#room-main-body').fadeOut(200)
         $('.room-body-head').fadeOut(200)
         $('.composer-panel').fadeOut(200)
         setTimeout(openBody, 500);
         function openBody() {
           
-          $('#room-nav').animate({"left": '0%'}, 200);
+          $('#room-nav').fadeIn(200)
         }
       
        }

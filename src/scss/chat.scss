@@ -365,7 +365,7 @@
   }
 }
 @media(max-width: 575px){
-  
+ 
   .layout-chat-main-container{
     height: 100%;
   }
@@ -375,10 +375,10 @@
     z-index: 2;
     width: 100%;
     padding: 3px 0;
-    position: sticky;
+    position: fixed;
     height: max-content;
-    background-color: #f9f9f9;
-    top: 0px;
+    background-color: #ffffff;
+    top: 60px;
   }
   .fill {
     min-height: 100%;
@@ -388,8 +388,8 @@
   }
   #room-nav{
     width: 100%;
-    position: absolute;
-    height: calc(100vh - 47px);
+    position: relative;
+    height: auto;
   }
   .room-list{
     height: 100%;
@@ -399,11 +399,15 @@
   }
   .layout-chat-main-container #room-main-body{
     width: 100%;
-    position: absolute;
-    padding-bottom: 60px;
-    right: -100%;
+    display: none;
+    position: relative;
+    padding-bottom: 65px;
+    margin-top:0px;
+    height: 100%;
+  }
+  .layout-chat-main-container #room-main-body .room-body{
     margin-top: 55px;
-    height: calc(100vh - 47px);
+    margin-bottom: 10px;
   }
   .room-body-head__right img{
     width: 39px;
@@ -506,9 +510,9 @@
     position: fixed;
     display: none;
   }
-  .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport{
-    height: 85%;
-  }
+  // .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport{
+  //   height: 85%;
+  // }
 }
 @media(max-width: 424px){
   
