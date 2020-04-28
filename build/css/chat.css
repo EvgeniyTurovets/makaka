@@ -429,8 +429,8 @@
 
 @media (max-width: 575px) {
     .layout-chat-main-container {
-        height: -webkit-calc(100vh - 60px);
-        height: calc(100vh - 60px);
+        height: -webkit-calc(100vh - 50px);
+        height: calc(100vh - 50px);
     }
 
     .room-body-head {
