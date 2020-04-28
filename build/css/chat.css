@@ -464,7 +464,7 @@
     }
 
     #story-box {
-        padding-bottom: 80px;
+        padding-bottom: 76px;
     }
 
     .layout-chat-main-container #room-main-body {
@@ -613,7 +613,7 @@
     }
 
     .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .composer-panel {
-        padding: 10px 10px 15px 10px;
+        padding: 10px 10px 10px 10px;
     }
 
     .composer-panel button {
