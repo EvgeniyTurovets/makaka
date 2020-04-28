@@ -464,7 +464,7 @@
     }
 
     #story-box {
-        padding-bottom: 76px;
+        padding-bottom: 0px;
     }
 
     .layout-chat-main-container #room-main-body {
@@ -626,12 +626,9 @@
     }
 
     .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .composer-panel {
-        position: fixed;
+        position: -webkit-sticky;
+        position: sticky;
         display: none;
-    }
-
-    .message:last-child {
-        margin-bottom: 30px;
     }
 }
 
