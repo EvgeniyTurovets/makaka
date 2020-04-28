@@ -3205,8 +3205,11 @@ $(function(){
         $('#app').append( $('.composer-panel') );
       }
      
-     function myFunction(){
-       alert('1213')
-     }
+      $('.composer-panel').bind('touchstart', function() {
+        $('html').css('overflow', 'hidden')
+      });
+      $('.composer-panel').bind('touchend', function() {
+        $('html').css('overflow', 'auto')
+      });
      
 })
