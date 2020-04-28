@@ -155,11 +155,22 @@ $(function(){
       });
     });
     $(window).scroll(function() {
-      $(".boxscroll").getNiceScroll().resize();
+      $(".boxscroll").getNiceScroll().onResize();
     });
     
     $(window).on('resize', function(){
-      $(".boxscroll").getNiceScroll().resize();
+      if($(window).width() < 576){
+        $(document).ready(function() {
+          $(".boxscroll").niceScroll({
+            cursorborder:'none',
+            cursorcolor:"#bfbfbf",
+            touchbehavior:true,
+            cursoropacitymin:1,
+            boxzoom:true
+          });
+        });
+      }
+      $(".boxscroll").getNiceScroll().onResize();
     });
 
     //открыть чат
@@ -170,6 +181,8 @@ $(function(){
         
           setTimeout(openBody, 500);
           function openBody() {
+            
+            $('.composer-panel').fadeIn(200)
             $('.room-body-head').fadeIn(200)
             $('#room-main-body').animate({"right": '0'}, 200);
           }
@@ -180,9 +193,10 @@ $(function(){
         if($(window).width() < 576){
         $('#room-main-body').animate({"right": '-100%'}, 200);
         $('.room-body-head').fadeOut(200)
+        $('.composer-panel').fadeOut(200)
         setTimeout(openBody, 500);
         function openBody() {
-        
+          
           $('#room-nav').animate({"left": '0%'}, 200);
         }
       

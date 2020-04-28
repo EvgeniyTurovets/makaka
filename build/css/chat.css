@@ -448,8 +448,8 @@
     }
 
     .fill {
-        height: -webkit-calc(100vh - 60px);
-        height: calc(100vh - 60px);
+        min-height: -webkit-calc(100vh - 60px);
+        min-height: calc(100vh - 60px);
     }
 
     #room-nav {
@@ -623,6 +623,11 @@
 
     .chat-column {
         height: 100%;
+    }
+
+    .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .composer-panel {
+        position: fixed;
+        display: none;
     }
 }
 
