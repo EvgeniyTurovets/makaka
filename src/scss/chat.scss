@@ -507,8 +507,8 @@
     height: 100%;
   }
   .composer-panel{
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    top: auto;
     display: none;
   }
   // .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport{
@@ -525,13 +525,10 @@
     -webkit-overflow-scrolling:touch;
   }
   #app{
-   height: 100%;
-   position: absolute;
-   top: 0;
-   overflow: hidden;
-   bottom: 0;
-   left: 0;
-   right: 0;
+    height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+   position: relative;
+  
   }
   .layout-chat-main-container{
     height: 100%;
