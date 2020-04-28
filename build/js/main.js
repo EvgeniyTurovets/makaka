@@ -3197,7 +3197,7 @@ $(function(){
       
        }
       })
-      if($(window).width() < 576){
-        $('body').append( $('.composer-panel') );
-      }
+      // if($(window).width() < 576){
+      //   $('#app').append( $('.composer-panel') );
+      // }
 })

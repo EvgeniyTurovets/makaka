@@ -455,7 +455,7 @@
     #room-nav {
         width: 100%;
         position: relative;
-        height: auto;
+        height: 100%;
     }
 
     .room-list {
@@ -470,14 +470,14 @@
         width: 100%;
         display: none;
         position: relative;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         margin-top: 0px;
         height: 100%;
     }
 
     .layout-chat-main-container #room-main-body .room-body {
-        margin-top: 55px;
-        margin-bottom: 10px;
+        padding-top: 50px;
+        margin-bottom: 0px;
     }
 
     .room-body-head__right img {
@@ -487,6 +487,10 @@
         margin-right: 10px;
         -webkit-border-radius: 100%;
         border-radius: 100%;
+    }
+
+    .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel {
+        padding-bottom: 70px;
     }
 
     .room-body-head__left span {
@@ -630,8 +634,7 @@
     }
 
     .composer-panel {
-        position: -webkit-sticky;
-        position: sticky;
+        position: absolute;
         bottom: 0;
         display: none;
     }
@@ -650,13 +653,28 @@
 
     #app {
         height: 100%;
-        overflow-y: scroll;
+        padding-top: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
     .layout-chat-main-container {
         height: 100%;
         overflow: scroll;
+        padding-top: 48px;
         overflow-x: hidden;
+    }
+
+    .layout-chat-main-container > .row {
+        height: 100%;
+    }
+
+    .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport .content {
+        height: 100%;
+        position: relative;
     }
 }
 
