@@ -550,6 +550,9 @@
     height: 100%;
     position: relative;
   }
+  body{
+    overflow: hidden;
+  }
 }
 @media(max-width: 424px){
   .room-body-head{

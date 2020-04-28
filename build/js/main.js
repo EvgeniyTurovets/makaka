@@ -3012,6 +3012,8 @@
 
 }));
 
+
+
 $(function(){
     $('.select').find('input').focus(function(){
         $(this).val('')
@@ -3202,5 +3204,9 @@ $(function(){
       if($(window).width() < 576){
         $('#app').append( $('.composer-panel') );
       }
-      
+     
+     function myFunction(){
+       alert('1213')
+     }
+     
 })
