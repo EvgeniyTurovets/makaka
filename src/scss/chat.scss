@@ -517,12 +517,12 @@
   .layout-chat-main-container #room-nav ul.room-list{
     overflow: auto;
     height: 100%;
-    -webkit-overflow-scrolling: auto;
+    -webkit-overflow-scrolling:touch;
   }
   .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport{
     overflow: auto;
     height: 100%;
-    -webkit-overflow-scrolling: auto;
+    -webkit-overflow-scrolling:touch;
   }
   #app{
    height: 100%;
