@@ -634,7 +634,8 @@
     }
 
     .composer-panel {
-        position: absolute;
+        position: -webkit-sticky;
+        position: sticky;
         bottom: 0;
         display: none;
     }
