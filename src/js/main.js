@@ -194,8 +194,9 @@ $(function(){
       
       $('.composer-panel') .on('touchstart',function(e){
         $('#viewport').css('overflow', 'hidden')
+        $('html').css('overflow', 'hidden')
       });
-    $('.composer-panel') .on('touchend',function(e){
-      $('#viewport').css('overflow', 'auto')
-  });
+      $('.composer-panel') .on('touchend',function(e){
+        $('#viewport').css('overflow', 'auto')
+      });
 })
