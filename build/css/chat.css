@@ -489,10 +489,6 @@
         border-radius: 100%;
     }
 
-    .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel {
-        padding-bottom: 70px;
-    }
-
     .room-body-head__left span {
         height: 2px;
         width: 15px;
@@ -634,8 +630,7 @@
     }
 
     .composer-panel {
-        position: -webkit-sticky;
-        position: sticky;
+        position: fixed;
         bottom: 0;
         display: none;
     }
@@ -656,6 +651,7 @@
         height: 100%;
         position: absolute;
         top: 0;
+        overflow: hidden;
         bottom: 0;
         left: 0;
         right: 0;
@@ -666,6 +662,11 @@
         overflow: scroll;
         padding-top: 0px;
         overflow-x: hidden;
+    }
+
+    .layout-chat-main-container.active {
+        height: -webkit-calc(100% - 74px);
+        height: calc(100% - 74px);
     }
 
     .layout-chat-main-container > .row {

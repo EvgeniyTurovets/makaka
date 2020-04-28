@@ -3176,7 +3176,8 @@ $(function(){
         
           setTimeout(openBody, 500);
           function openBody() {
-            
+            $(' .layout-chat-main-container').addClass('active')
+           
             $('.composer-panel').fadeIn(200)
             $('.room-body-head').fadeIn(200)
             $('#room-main-body').fadeIn(200)
@@ -3189,6 +3190,7 @@ $(function(){
         $('#room-main-body').fadeOut(200)
         $('.room-body-head').fadeOut(200)
         $('.composer-panel').fadeOut(200)
+        $(' .layout-chat-main-container').removeClass('active')
         setTimeout(openBody, 500);
         function openBody() {
           
@@ -3200,4 +3202,5 @@ $(function(){
       if($(window).width() < 576){
         $('#app').append( $('.composer-panel') );
       }
+      
 })
