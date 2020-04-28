@@ -626,9 +626,12 @@
     }
 
     .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .composer-panel {
-        position: -webkit-sticky;
-        position: sticky;
+        position: fixed;
         display: none;
+    }
+
+    .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport {
+        height: 85%;
     }
 }
 
