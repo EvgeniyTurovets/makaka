@@ -630,7 +630,7 @@
     }
 
     .composer-panel {
-        position: absolute;
+        position: fixed;
         top: auto;
         display: none;
     }
@@ -647,12 +647,13 @@
         -webkit-overflow-scrolling: touch;
     }
 
+    body {
+        overflow: hidden;
+    }
+
     #app {
-        height: 100vh;
-    /* Use vh as a fallback for browsers that do not support Custom Properties */
-        height: -webkit-calc(var(--vh, 1vh) * 100);
-        height: calc(var(--vh, 1vh) * 100);
-        position: relative;
+        height: 80vh;
+        overflow: hidden;
     }
 
     .layout-chat-main-container {
