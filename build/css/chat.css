@@ -429,8 +429,7 @@
 
 @media (max-width: 575px) {
     .layout-chat-main-container {
-        height: -webkit-calc(100vh - 50px);
-        height: calc(100vh - 50px);
+        height: 100%;
     }
 
     .room-body-head {
@@ -448,15 +447,17 @@
     }
 
     .fill {
-        min-height: -webkit-calc(100vh - 60px);
-        min-height: calc(100vh - 60px);
+        min-height: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
     }
 
     #room-nav {
         width: 100%;
         position: absolute;
-        left: 0;
-        height: 100%;
+        height: -webkit-calc(100vh - 47px);
+        height: calc(100vh - 47px);
     }
 
     .room-list {
@@ -473,7 +474,8 @@
         padding-bottom: 60px;
         right: -100%;
         margin-top: 55px;
-        height: 100%;
+        height: -webkit-calc(100vh - 47px);
+        height: calc(100vh - 47px);
     }
 
     .room-body-head__right img {
@@ -636,11 +638,6 @@
 }
 
 @media (max-width: 424px) {
-    .fill {
-        height: -webkit-calc(100vh - 42px);
-        height: calc(100vh - 42px);
-    }
-
     .room-body-head__left {
         left: 5px;
     }
