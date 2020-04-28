@@ -630,7 +630,7 @@
     }
 
     .composer-panel {
-        position: fixed;
+        position: absolute;
         bottom: 0;
         display: none;
     }
@@ -645,6 +645,17 @@
         overflow: scroll !important;
         -ms-touch-action: auto !important;
         touch-action: auto !important;
+    }
+
+    #app {
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    .layout-chat-main-container {
+        height: 100%;
+        overflow: scroll;
+        overflow-x: hidden;
     }
 }
 

@@ -507,7 +507,7 @@
     height: 100%;
   }
   .composer-panel{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     display: none;
   }
@@ -521,6 +521,15 @@
   .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport{
     overflow: scroll!important;
     touch-action: auto!important;
+  }
+  #app{
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  .layout-chat-main-container{
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
   }
 }
 @media(max-width: 424px){

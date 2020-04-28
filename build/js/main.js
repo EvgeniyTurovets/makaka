@@ -3198,6 +3198,6 @@ $(function(){
        }
       })
       if($(window).width() < 576){
-        $('#app').append( $('.composer-panel') );
+        $('.layout-chat-main-container').append( $('.composer-panel') );
       }
 })
