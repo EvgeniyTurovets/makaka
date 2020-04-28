@@ -3205,11 +3205,11 @@ $(function(){
         $('#app').append( $('.composer-panel') );
       }
      
-      $('.composer-panel').bind('touchstart', function() {
-        $('html').css('overflow', 'hidden')
+      
+      $('.composer-panel') .on('touchstart',function(e){
+        $('#viewport').css('overflow', 'hidden')
       });
-      $('.composer-panel').bind('touchend', function() {
-        $('html').css('overflow', 'auto')
-      });
-     
+    $('.composer-panel') .on('touchend',function(e){
+      $('#viewport').css('overflow', 'auto')
+  });
 })
