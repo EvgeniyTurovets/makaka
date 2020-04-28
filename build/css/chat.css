@@ -293,7 +293,7 @@
     padding-left: 10px;
 }
 
-.layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .composer-panel {
+.composer-panel {
     display: block;
     position: absolute;
     left: 0;
@@ -307,7 +307,7 @@
     background-color: #f9f9f9;
 }
 
-.layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .composer-panel textarea {
+.composer-panel textarea {
     -webkit-border-radius: unset;
     border-radius: unset;
 }
@@ -379,7 +379,7 @@
     width: 24px;
 }
 
-.layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .composer-panel textarea {
+.composer-panel textarea {
     padding-right: 40px;
 }
 
@@ -611,12 +611,12 @@
         width: 98%;
     }
 
-    .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .composer-panel textarea {
+    .composer-panel textarea {
         padding-right: 40px;
         font-size: 14px;
     }
 
-    .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .composer-panel {
+    .composer-panel {
         padding: 10px 10px 10px 10px;
     }
 
@@ -629,8 +629,9 @@
         height: 100%;
     }
 
-    .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .composer-panel {
+    .composer-panel {
         position: fixed;
+        bottom: 0;
         display: none;
     }
 

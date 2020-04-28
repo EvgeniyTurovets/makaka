@@ -134,17 +134,8 @@ $(function(){
     });
 
     //кастомизация скрола
-    if($(window).width() < 576){
-      $(document).ready(function() {
-        $(".boxscroll").niceScroll({
-          cursorborder:'none',
-          cursorcolor:"#bfbfbf",
-          touchbehavior:true,
-          cursoropacitymin:1,
-          boxzoom:true
-        });
-      });
-    }
+   
+    if($(window).width() > 576){
     $(document).ready(function() {
       $(".boxscroll").niceScroll({
         cursorborder:'none',
@@ -154,24 +145,14 @@ $(function(){
         boxzoom:true
       });
     });
+    }
     $(window).scroll(function() {
-      $(".boxscroll").getNiceScroll().onResize();
+      if($(window).width() > 576){
+        $(".boxscroll").getNiceScroll().onResize();
+      }
     });
     
-    $(window).on('resize', function(){
-      if($(window).width() < 576){
-        $(document).ready(function() {
-          $(".boxscroll").niceScroll({
-            cursorborder:'none',
-            cursorcolor:"#bfbfbf",
-            touchbehavior:true,
-            cursoropacitymin:1,
-            boxzoom:true
-          });
-        });
-      }
-      $(".boxscroll").getNiceScroll().onResize();
-    });
+    
 
     //открыть чат
     
@@ -202,5 +183,7 @@ $(function(){
       
        }
       })
-    
+      if($(window).width() < 576){
+        $('#app').append( $('.composer-panel') );
+      }
 })
