@@ -636,15 +636,15 @@
     }
 
     .layout-chat-main-container #room-nav ul.room-list {
-        overflow: scroll !important;
-        -ms-touch-action: auto !important;
-        touch-action: auto !important;
+        overflow: auto;
+        height: 100%;
+        -webkit-overflow-scrolling: auto;
     }
 
     .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport {
-        overflow: scroll !important;
-        -ms-touch-action: auto !important;
-        touch-action: auto !important;
+        overflow: auto;
+        height: 100%;
+        -webkit-overflow-scrolling: auto;
     }
 
     #app {
