@@ -538,7 +538,7 @@
   .layout-chat-main-container{
     height: 100%;
     overflow: scroll;
-    
+    -webkit-overflow-scrolling:touch;
     padding-top: 0px;
     overflow-x: hidden;
   }
