@@ -507,8 +507,8 @@
     height: 100%;
   }
   .composer-panel{
-    position: fixed;
-    top: auto;
+    position: absolute;
+    bottom: 0;
     display: none;
   }
   // .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport{
@@ -528,8 +528,10 @@
     overflow: hidden;
   }
   #app{
-   height: 80vh;
-   
+   height: 100%;
+   width: 100%;
+   position: fixed;
+   min-height: auto;
    overflow: hidden;
   
   }

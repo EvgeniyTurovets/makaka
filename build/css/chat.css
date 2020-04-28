@@ -630,8 +630,8 @@
     }
 
     .composer-panel {
-        position: fixed;
-        top: auto;
+        position: absolute;
+        bottom: 0;
         display: none;
     }
 
@@ -652,7 +652,10 @@
     }
 
     #app {
-        height: 80vh;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        min-height: auto;
         overflow: hidden;
     }
 
