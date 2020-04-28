@@ -441,7 +441,7 @@
         height: -webkit-max-content;
         height: -moz-max-content;
         height: max-content;
-        background-color: #ffffff;
+        background-color: #f5f5f5;
         top: 60px;
     }
 
@@ -633,9 +633,26 @@
         position: fixed;
         display: none;
     }
+
+    .layout-chat-main-container #room-nav ul.room-list {
+        overflow: scroll !important;
+        -ms-touch-action: auto !important;
+        touch-action: auto !important;
+    }
+
+    .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport {
+        overflow: scroll !important;
+        -ms-touch-action: auto !important;
+        touch-action: auto !important;
+    }
 }
 
 @media (max-width: 424px) {
+    .room-body-head {
+        top: 47px;
+        width: 105%;
+    }
+
     .room-body-head__left {
         left: 5px;
     }
