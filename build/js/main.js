@@ -3204,26 +3204,39 @@ $(function(){
       if($(window).width() < 576){
         $("#app").append($('.composer-panel'));
      
+        var disableScroll = false;
+        var scrollPos = 0;
+        function stopScroll() {
+            disableScroll = true;
+            scrollPos = $(window).scrollTop();
+        }
+        function enableScroll() {
+            disableScroll = false;
+        }
+        $(function(){
+            $(window).bind('scroll', function(){
+                 if(disableScroll) $(window).scrollTop(scrollPos);
+            });
+            $(window).bind('touchmove', function(){
+                 $(window).trigger('scroll');
+            });
+        });
 
-        
-        var scrollTop = 0;
-        $('.composer-panel').find('textarea').focusin(function(event) {
-          console.log('123')
-          scrollTop = window.scrollY;
-          $('body').toggleClass('hide_page');
-          if($('body').hasClass('hide_page')){
-            window.scrollTo(0, scrollTop);
-          };
-        });   
-        
-        $('.composer-panel').find('textarea').focusout(function(event) {
-          console.log('123')
-          scrollTop = window.scrollY;
-          $('body').toggleClass('hide_page');
-          if($('body').hasClass('hide_page')){
-            window.scrollTo(0, scrollTop);
-          };
-        });   
-      }
+        $('.composer-panel').find('textarea').on('touchstart', function(){
+          $(window).scrollTop()
+        })
+        $('.composer-panel').find('textarea').focusin(function(){
+          // stopScroll()
+          
+          $(window).scrollTop()
+          
+        })
+        $('.composer-panel').find('textarea').focusout(function(){
+          // enableScroll()
+          window.ontouchmove = function (e) {
+            return true;
+          }
+        })
+    }
     
 })
