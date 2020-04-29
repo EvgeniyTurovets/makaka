@@ -625,7 +625,7 @@
         width: 98%;
     }
 
-    .composer-panel textarea {
+    .composer-panel span {
         padding-right: 40px;
         font-size: 14px;
     }
@@ -647,6 +647,9 @@
         position: relative;
         bottom: 0;
         display: none;
+        height: 74px;
+        max-height: 74px;
+        overflow: hidden;
     }
 
     .layout-chat-main-container #room-nav ul.room-list {
@@ -714,10 +717,6 @@
     .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport .content {
         height: 100%;
         position: relative;
-    }
-
-    .composer-panel {
-        padding: 31px 10px 29px 10px;
     }
 }
 
