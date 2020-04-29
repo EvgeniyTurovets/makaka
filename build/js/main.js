@@ -3203,32 +3203,29 @@ $(function(){
       })
       if($(window).width() < 576){
         $('body').append( $('.composer-panel') );
-      }
-      let bodyH = $('body').height()
-      let wH = $(window).height()
-      let HH = $('html').height()
       
-      $('#app').scroll(function() { 
-        if($('body').height() != bodyH){
-          $('.class').show()
-        }
-        if($(window).height() != wH){
-          $('.class').show()
-        }
-        if($('html').height() != HH){
-          $('.class').show()
-        }
+
+        let bodyH = $('body').height()
+      
+        let htmlH = $('html').height()
+        
+        $('#app').scroll(function() { 
+          $('body').css('height', bodyH)
+          $('body').css('overflow', 'hidden')
+          $('html').css('height', htmlH)
+          $('body').css('overflow', 'hidden')
+
+          $('.composer-panel').css('height', '87px')
+          $('.composer-panel').css('bottom', '0')
+        });
+        $(document).on('touchstart', function(e){
+          $('body').css('height', bodyH)
+          $('body').css('overflow', 'hidden')
+          $('html').css('height', htmlH)
+          $('body').css('overflow', 'hidden')
+
+          $('.composer-panel').css('height', '87px')
+          $('.composer-panel').css('bottom', '0')
       });
-      
-      $(document).click(function(){
-        if($('body').height() != bodyH){
-          $('.class').show()
-        }
-        if($(window).height() != wH){
-          $('.class').show()
-        }
-        if($('html').height() != HH){
-          $('.class').show()
-        }
-      })
+    }
 })

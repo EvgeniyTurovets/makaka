@@ -443,7 +443,9 @@
 
 @media (max-width: 575px) {
     .composer-panel {
+        position: absolute;
         display: none;
+        bottom: 0;
     }
 
     html, body {
@@ -457,7 +459,7 @@
         height: 100%;
         -webkit-overflow-scrolling: touch;
         min-height: auto;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 
     .fill {
