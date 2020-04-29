@@ -634,9 +634,9 @@
         bottom: 0;
         display: none;
         top: 100%;
-        -webkit-transform: translateY(-73px);
-        -ms-transform: translateY(-73px);
-        transform: translateY(-73px);
+        -webkit-transform: translateY(-350%);
+        -ms-transform: translateY(-350%);
+        transform: translateY(-350%);
     }
 
     .layout-chat-main-container #room-nav ul.room-list {
