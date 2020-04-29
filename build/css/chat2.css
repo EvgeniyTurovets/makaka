@@ -443,13 +443,16 @@
 
 @media (max-width: 575px) {
     .composer-panel {
-        position: relative;
-        display: none;
+        position: absolute;
+        display: block;
         -webkit-box-flex: 0;
         -webkit-flex: 0;
         -ms-flex: 0;
         flex: 0;
-        bottom: 0;
+        top: 40px;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
     }
 
     .chat-column {

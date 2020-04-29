@@ -3202,7 +3202,7 @@ $(function(){
        }
       })
       if($(window).width() < 576){
-      //   $('body').append( $('.composer-panel') );
+        $('html').append( $('.composer-panel') );
       
 
       //   let bodyH = $('body').height()
