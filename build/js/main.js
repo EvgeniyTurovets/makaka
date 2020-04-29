@@ -3224,10 +3224,17 @@ $(function(){
 
 
         $('.composer-panel').find('textarea').focusin(function(){
-          stopScroll()
+          // stopScroll()
+          document.ontouchmove = function (e) {
+            e.preventDefault();
+          }
+          
         })
         $('.composer-panel').find('textarea').focusout(function(){
-          enableScroll()
+          // enableScroll()
+          document.ontouchmove = function (e) {
+            return true;
+          }
         })
     }
     
