@@ -3202,31 +3202,31 @@ $(function(){
        }
       })
       if($(window).width() < 576){
-        $('body').append( $('.composer-panel') );
+      //   $('body').append( $('.composer-panel') );
       
 
-        let bodyH = $('body').height()
+      //   let bodyH = $('body').height()
       
-        let htmlH = $('html').height()
+      //   let htmlH = $('html').height()
         
-        $('#app').scroll(function() { 
-          $('body').css('height', bodyH)
-          $('body').css('overflow', 'hidden')
-          $('html').css('height', htmlH)
-          $('body').css('overflow', 'hidden')
+      //   $('#app').scroll(function() { 
+      //     $('body').css('height', bodyH)
+      //     $('body').css('overflow', 'hidden')
+      //     $('html').css('height', htmlH)
+      //     $('body').css('overflow', 'hidden')
 
-          $('.composer-panel').css('height', '87px')
-          $('.composer-panel').css('bottom', '0')
-        });
-        $(document).on('touchstart', function(e){
-          $('body').css('height', bodyH)
-          $('body').css('overflow', 'hidden')
-          $('html').css('height', htmlH)
-          $('body').css('overflow', 'hidden')
+      //     $('.composer-panel').css('height', '87px')
+      //     $('.composer-panel').css('bottom', '0')
+      //   });
+      //   $(document).on('touchstart', function(e){
+      //     $('body').css('height', bodyH)
+      //     $('body').css('overflow', 'hidden')
+      //     $('html').css('height', htmlH)
+      //     $('body').css('overflow', 'hidden')
 
-          $('.composer-panel').css('height', '87px')
-          $('.composer-panel').css('bottom', '0')
-      });
+      //     $('.composer-panel').css('height', '87px')
+      //     $('.composer-panel').css('bottom', '0')
+      // });
     }
    
 })

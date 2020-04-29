@@ -443,9 +443,17 @@
 
 @media (max-width: 575px) {
     .composer-panel {
-        position: absolute;
+        position: relative;
         display: none;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0;
+        -ms-flex: 0;
+        flex: 0;
         bottom: 0;
+    }
+
+    .chat-column {
+        height: inherit;
     }
 
     html, body {
@@ -454,26 +462,34 @@
         -webkit-overflow-scrolling: touch;
         overflow: hidden;
         height: 100%;
-        position: fixed;
-        width: 100%;
+    }
+
+    #story-box {
+        padding-bottom: 46px;
     }
 
     #app {
         height: 100%;
         -webkit-overflow-scrolling: touch;
         min-height: auto;
-        overflow-y: auto;
-        position: fixed;
+        position: relative;
         width: 100%;
+        overflow: hidden;
     }
 
     .fill {
         position: relative;
         height: 100%;
         top: 0;
+        overflow: hidden;
     }
 
     .layout-chat-main-container .row {
+        height: 100%;
+    }
+
+    .layout-chat-main-container #room-nav ul.room-list {
+        overflow: auto;
         height: 100%;
     }
 
@@ -578,15 +594,5 @@
 
     .room-body-head__right div span:last-child {
         font-size: 14px;
-    }
-
-    .class {
-        position: fixed;
-        display: none;
-        height: 100%;
-        z-index: 100;
-        font-size: 40px;
-        width: 100%;
-        background-color: red;
     }
 }
