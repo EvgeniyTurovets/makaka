@@ -454,6 +454,8 @@
         -webkit-overflow-scrolling: touch;
         overflow: hidden;
         height: 100%;
+        position: fixed;
+        width: 100%;
     }
 
     #app {
@@ -461,6 +463,8 @@
         -webkit-overflow-scrolling: touch;
         min-height: auto;
         overflow-y: auto;
+        position: fixed;
+        width: 100%;
     }
 
     .fill {
