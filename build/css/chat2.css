@@ -632,4 +632,8 @@
         width: 100%;
         text-align: right;
     }
+
+    .hide_page {
+        overflow: hidden;
+    }
 }
