@@ -3205,12 +3205,5 @@ $(function(){
         $('#app').append( $('.composer-panel') );
       }
     
-    let formheight = 74;
-    let textarea = $('.composer-panel textarea')
-    textarea.focus(function(){
-      $('.composer-panel').css('height', formheight)
-    })
-    $('.composer-panel').scroll(function() {
-      $('.composer-panel').css('height', formheight)
-    });
+    
 })

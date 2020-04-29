@@ -647,9 +647,9 @@
         position: relative;
         bottom: 0;
         display: none;
-        height: 74px;
-        max-height: 74px;
-        overflow: hidden;
+        height: 74px !important;
+        max-height: 74px !important;
+        overflow: hidden !important;
     }
 
     .layout-chat-main-container #room-nav ul.room-list {
@@ -665,13 +665,13 @@
     }
 
     body {
-        overflow: hidden;
+        overflow: hidden !important;
         -webkit-overflow-scrolling: touch;
     }
 
     html {
         height: 100%;
-        overflow: hidden;
+        overflow: hidden !important;
         -webkit-overflow-scrolling: touch;
     }
 
@@ -693,7 +693,7 @@
         -ms-flex-pack: justify;
         justify-content: space-between;
         min-height: auto;
-        overflow: hidden;
+        overflow: hidden !important;
         -webkit-overflow-scrolling: touch;
     }
 
@@ -702,7 +702,7 @@
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
         padding-top: 0px;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
 
     .layout-chat-main-container.active {
