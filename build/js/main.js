@@ -3204,8 +3204,31 @@ $(function(){
       if($(window).width() < 576){
         $('body').append( $('.composer-panel') );
       }
+      let bodyH = $('body').height()
+      let wH = $(window).height()
+      let HH = $('html').height()
+      
+      $('#app').scroll(function() { 
+        if($('body').height() != bodyH){
+          alert('Высота боди изменилась')
+        }
+        if($(window).height() != wH){
+          alert('Высота Окна изменилась')
+        }
+        if($('html').height() != HH){
+          alert('Высота Html изменилась')
+        }
+      });
+      
       $(document).click(function(){
-        $('.composer-panel').css('bottom', '0')
+        if($('body').height() != bodyH){
+          alert('Высота боди изменилась')
+        }
+        if($(window).height() != wH){
+          alert('Высота Окна изменилась')
+        }
+        if($('html').height() != HH){
+          alert('Высота Html изменилась')
+        }
       })
-    
 })
