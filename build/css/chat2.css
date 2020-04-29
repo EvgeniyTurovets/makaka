@@ -572,4 +572,14 @@
     .room-body-head__right div span:last-child {
         font-size: 14px;
     }
+
+    .class {
+        position: fixed;
+        display: none;
+        height: 100%;
+        z-index: 100;
+        font-size: 40px;
+        width: 100%;
+        background-color: red;
+    }
 }

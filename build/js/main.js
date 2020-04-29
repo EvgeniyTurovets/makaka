@@ -3210,25 +3210,25 @@ $(function(){
       
       $('#app').scroll(function() { 
         if($('body').height() != bodyH){
-          alert('Высота боди изменилась')
+          $('.class').show()
         }
         if($(window).height() != wH){
-          alert('Высота Окна изменилась')
+          $('.class').show()
         }
         if($('html').height() != HH){
-          alert('Высота Html изменилась')
+          $('.class').show()
         }
       });
       
       $(document).click(function(){
         if($('body').height() != bodyH){
-          alert('Высота боди изменилась')
+          $('.class').show()
         }
         if($(window).height() != wH){
-          alert('Высота Окна изменилась')
+          $('.class').show()
         }
         if($('html').height() != HH){
-          alert('Высота Html изменилась')
+          $('.class').show()
         }
       })
 })
