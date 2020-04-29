@@ -442,22 +442,19 @@
 }
 
 @media (max-width: 575px) {
-    html {
-        overflow: hidden;
-    }
-
-    body {
-        overflow: hidden;
-    }
-
     .composer-panel {
         display: none;
     }
 
-    #app {
-        position: relative;
+    html, body {
         height: 100%;
-        overflow: auto;
+    }
+
+    #app {
+        height: 100%;
+        padding: 0;
+        min-height: auto;
+        overflow-y: scroll;
     }
 
     .fill {
