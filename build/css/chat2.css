@@ -443,7 +443,8 @@
 
 @media (max-width: 575px) {
     .composer-panel {
-        position: relative;
+        position: fixed;
+        bottom: 0;
         display: block;
         -webkit-box-flex: 0;
         -webkit-flex: 0;
@@ -456,7 +457,7 @@
     }
 
     #story-box {
-        padding-bottom: 46px;
+        padding-bottom: 133px;
     }
 
     #app {
