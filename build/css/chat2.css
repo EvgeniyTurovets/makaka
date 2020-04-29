@@ -442,6 +442,10 @@
 }
 
 @media (max-width: 575px) {
+    html {
+        overflow: hidden;
+    }
+
     .composer-panel {
         display: none;
     }
