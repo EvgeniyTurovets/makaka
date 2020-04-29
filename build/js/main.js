@@ -3228,4 +3228,7 @@ $(function(){
           $('.composer-panel').css('bottom', '0')
       });
     }
+    alert($('html').height())
+    alert($('body').height())
+    alert($('#app').height())
 })

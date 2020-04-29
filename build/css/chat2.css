@@ -449,6 +449,7 @@
     }
 
     html, body {
+        max-height: 100vh;
         height: 100%;
         -webkit-overflow-scrolling: touch;
         overflow: hidden;
