@@ -3222,20 +3222,16 @@ $(function(){
             });
         });
 
-
+        $('.composer-panel').find('textarea').on('touchstart', function(){
+          $(window).scrollTop()
+        })
         $('.composer-panel').find('textarea').focusin(function(){
           // stopScroll()
-          document.ontouchmove = function (e) {
-            e.preventDefault();
-          }
+          
+          $(window).scrollTop()
           
         })
-        $('.composer-panel').find('textarea').focusout(function(){
-          // enableScroll()
-          document.ontouchmove = function (e) {
-            return true;
-          }
-        })
+        
     }
     
 })
