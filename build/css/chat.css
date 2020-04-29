@@ -633,6 +633,7 @@
         position: absolute;
         bottom: 0;
         display: none;
+        top: 89%;
     }
 
     .layout-chat-main-container #room-nav ul.room-list {
@@ -649,6 +650,13 @@
 
     body {
         overflow: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    html {
+        height: 100%;
+        overflow: hidden;
+        -webkit-overflow-scrolling: touch;
     }
 
     #app {
@@ -657,6 +665,7 @@
         position: fixed;
         min-height: auto;
         overflow: hidden;
+        -webkit-overflow-scrolling: touch;
     }
 
     .layout-chat-main-container {
@@ -679,10 +688,6 @@
     .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport .content {
         height: 100%;
         position: relative;
-    }
-
-    body {
-        overflow: hidden;
     }
 }
 
