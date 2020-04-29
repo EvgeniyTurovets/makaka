@@ -504,7 +504,7 @@
     text-align: right;
     width: 98%;
   }
-  .composer-panel span{
+  .composer-panel textarea{
     padding-right: 40px;
     font-size: 14px;
   }
@@ -553,7 +553,7 @@
   #app{
    height: 100%;
    width: 100%;
-   position: absolute;
+   position: relative;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
