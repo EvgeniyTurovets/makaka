@@ -3202,7 +3202,7 @@ $(function(){
        }
       })
       if($(window).width() < 576){
-        $('html').append( $('.composer-panel') );
+      //   $('body').append( $('.composer-panel') );
       
 
       //   let bodyH = $('body').height()
@@ -3227,6 +3227,9 @@ $(function(){
       //     $('.composer-panel').css('height', '87px')
       //     $('.composer-panel').css('bottom', '0')
       // });
+      $(document).on('touchmove',function(e){
+        e.preventDefault();
+      });
     }
-   
+    
 })
