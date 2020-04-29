@@ -3202,7 +3202,7 @@ $(function(){
        }
       })
       if($(window).width() < 576){
-        $('#app').append( $('.composer-panel') );
+        $('body').append( $('.composer-panel') );
       }
     
     

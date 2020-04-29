@@ -380,7 +380,6 @@
    
     .composer-panel{
         display: none;
-        position: fixed;
     }
   
     html, body {
@@ -413,4 +412,63 @@
     .room-list{
         height: auto;
     }
+
+    .room-body-head__right img{
+        width: 39px;
+        margin-left: 10px;
+        height: 39px;
+        margin-right: 10px;
+        border-radius: 100%;
+      }
+     
+      .room-body-head__left span{
+        height: 2px;
+        width: 15px;
+        display: block;
+        background: #00a6e8;
+      }
+      .room-body-head__left{
+        position: relative;
+        display: block;
+        height: 44px;
+        width: 30px;
+        span:first-child{
+          position: absolute;
+          transform: rotate(-45deg);
+          top: 16px;
+        }
+        span:last-child{
+          position: absolute;
+          transform: rotate(45deg);
+          top: 26px;
+        }
+      }
+      .room-body-head .d-flex{
+        align-items: center;
+      }
+      .room-body-head__right{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+      }
+      .room-body-head__right:hover{
+        text-decoration: none;
+      }
+      .room-body-head__right div{
+        display: flex;
+        flex-direction: column;
+        color: black;
+      }
+      .room-body-head__right .ofline:before{
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        margin-right: 5px;
+        background-color: #f2df41;
+      }
+      .room-body-head__right div span:last-child{
+        font-size: 14px;
+      }
   }
