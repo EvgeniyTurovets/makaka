@@ -3204,6 +3204,8 @@ $(function(){
       if($(window).width() < 576){
         $('body').append( $('.composer-panel') );
       }
-    
+      $(document).click(function(){
+        $('.composer-panel').css('bottom', '0')
+      })
     
 })

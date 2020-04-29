@@ -448,7 +448,9 @@
 
     html, body {
         height: 100%;
-        overflow: hidden;
+        -webkit-overflow-scrolling: touch !important;
+        overflow: hidden !important;
+        height: 100% !important;
     }
 
     #app {
