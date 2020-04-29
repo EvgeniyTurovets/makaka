@@ -3202,7 +3202,7 @@ $(function(){
        }
       })
       if($(window).width() < 576){
-     
+        $("#app").append($('.composer-panel'));
      
         var disableScroll = false;
         var scrollPos = 0;
@@ -3221,12 +3221,14 @@ $(function(){
                  $(window).trigger('scroll');
             });
         });
-      $('.composer-panel').find('textarea').focusin(function(){
-        stopScroll()
-      })
-      $('.composer-panel').find('textarea').focusout(function(){
-        enableScroll()
-      })
+
+
+        $('.composer-panel').find('textarea').focusin(function(){
+          stopScroll()
+        })
+        $('.composer-panel').find('textarea').focusout(function(){
+          enableScroll()
+        })
     }
     
 })

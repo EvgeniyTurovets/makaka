@@ -445,7 +445,7 @@
     .composer-panel {
         position: fixed;
         bottom: 0;
-        display: block;
+        display: none;
         -webkit-box-flex: 0;
         -webkit-flex: 0;
         -ms-flex: 0;
