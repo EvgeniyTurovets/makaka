@@ -507,11 +507,10 @@
     height: 100%;
   }
   .composer-panel{
-    position: absolute;
+    position: relative;
     bottom: 0;
     display: none;
-    top: 100%;
-    transform: translateY(-350%);
+   
   }
   // .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport{
   //   height: 85%;
@@ -540,7 +539,10 @@
   #app{
    height: 100%;
    width: 100%;
-   position: fixed;
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
    min-height: auto;
    overflow: hidden;
    -webkit-overflow-scrolling:touch;

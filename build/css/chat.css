@@ -630,13 +630,9 @@
     }
 
     .composer-panel {
-        position: absolute;
+        position: relative;
         bottom: 0;
         display: none;
-        top: 100%;
-        -webkit-transform: translateY(-350%);
-        -ms-transform: translateY(-350%);
-        transform: translateY(-350%);
     }
 
     .layout-chat-main-container #room-nav ul.room-list {
@@ -665,7 +661,20 @@
     #app {
         height: 100%;
         width: 100%;
-        position: fixed;
+        position: absolute;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         min-height: auto;
         overflow: hidden;
         -webkit-overflow-scrolling: touch;
