@@ -644,7 +644,7 @@
     }
 
     .composer-panel {
-        position: relative;
+        position: fixed;
         bottom: 0;
         display: none;
         height: 74px !important;
@@ -665,13 +665,14 @@
     }
 
     body {
-        overflow: hidden !important;
+        min-height: 100%;
         -webkit-overflow-scrolling: touch;
+        height: auto;
     }
 
     html {
-        height: 100%;
-        overflow: hidden !important;
+        min-height: 100%;
+        height: auto;
         -webkit-overflow-scrolling: touch;
     }
 
@@ -706,8 +707,8 @@
     }
 
     .layout-chat-main-container.active {
-        height: -webkit-calc(100% - 74px);
-        height: calc(100% - 74px);
+        height: 100%;
+        padding-bottom: 74px;
     }
 
     .layout-chat-main-container > .row {
