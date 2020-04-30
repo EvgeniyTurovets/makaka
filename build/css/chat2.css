@@ -666,6 +666,6 @@
     }
 }
 
-#room-main-body, .room-main-body * {
+#room-main-body, #room-main-body * {
     height: auto !important;
 }
