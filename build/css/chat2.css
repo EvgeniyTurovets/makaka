@@ -483,8 +483,8 @@
         bottom: 0;
         height: 100%;
         width: 100%;
-        position: static;
-        overflow: visible;
+        position: relative;
+        overflow: auto;
         overflow-x: hidden;
     }
 
@@ -654,6 +654,10 @@
     .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport .content .message .client .date {
         width: 100%;
         text-align: right;
+    }
+
+    .header-row {
+        position: absolute;
     }
 }
 

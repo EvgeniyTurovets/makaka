@@ -3214,9 +3214,10 @@ $(function(){
         console.log('body scroll')
       });
       $('.composer-panel').find('.form-control').focusin(function(){
-        $('body').css('height', 'auto');
-        $('body').css('overflow', 'auto');
-        $('html').css('height', 'auto');
-        $('html').css('overflow', 'auto');
+        // $('body').css('height', 'auto');
+        // $('body').css('overflow', 'auto');
+        // $('html').css('height', 'auto');
+        // $('html').css('overflow', 'auto');
+        $('body').css('padding-top', '100px');
       })
 })
