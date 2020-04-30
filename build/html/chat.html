@@ -535,7 +535,7 @@
              $("#viewport").scroll(function() {
                 var scroll = $("#viewport").scrollTop();
                  $('.position-for-top').html(scroll);
-                 if(scroll < 50) {
+                 if(scroll < -1) {
                     $('.composer-panel textarea').blur();
                  }
             });
