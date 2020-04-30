@@ -535,6 +535,9 @@
              $("#viewport").scroll(function() {
                 var scroll = $("#viewport").scrollTop();
                  $('.position-for-top').html(scroll);
+                 if(scroll < 50) {
+                    $('.composer-panel textarea').blur();
+                 }
             });
          });
         </script>
