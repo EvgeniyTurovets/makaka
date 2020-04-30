@@ -444,6 +444,8 @@
 @media (max-width: 575px) {
     body, html {
         overflow: hidden;
+        position: fixed;
+        width: 100%;
     }
 
     .layout-chat-main-container #room-nav ul.room-list li.room-list-item.selected {
