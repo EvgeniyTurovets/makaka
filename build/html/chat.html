@@ -522,7 +522,7 @@
                 </div>
             </div>
         </div>
-        <div class="position-for-top">NAN</div>
+        <!--<div class="position-for-top">NAN</div>-->
         
        
         <script src="../js/main.js"></script>
@@ -534,8 +534,8 @@
          $(document).ready(function() {
              $("#viewport").scroll(function() {
                 var scroll = $("#viewport").scrollTop();
-                 $('.position-for-top').html(scroll);
-                 if(scroll < -1) {
+                 /*$('.position-for-top').html(scroll);*/
+                 if(scroll < 0) {
                     $('.composer-panel textarea').blur();
                  }
             });
