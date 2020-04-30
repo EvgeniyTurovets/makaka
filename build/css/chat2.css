@@ -668,3 +668,6 @@
 
 #story-box {
 padding-bottom: 0 !important;}
+.layout-chat-main-container #room-main-body {padding-bottom: 88px !important;}
+.layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container {transform: none !important; -webkit-transform: none !important; overflow: auto !important;}
+.layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport {height: auto !important;}
