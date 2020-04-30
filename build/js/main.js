@@ -3204,39 +3204,6 @@ $(function(){
       if($(window).width() < 576){
         $("#app").append($('.composer-panel'));
      
-        var disableScroll = false;
-        var scrollPos = 0;
-        function stopScroll() {
-            disableScroll = true;
-            scrollPos = $(window).scrollTop();
-        }
-        function enableScroll() {
-            disableScroll = false;
-        }
-        $(function(){
-            $(window).bind('scroll', function(){
-                 if(disableScroll) $(window).scrollTop(scrollPos);
-            });
-            $(window).bind('touchmove', function(){
-                 $(window).trigger('scroll');
-            });
-        });
-
-        $('.composer-panel').find('textarea').on('touchstart', function(){
-          $(window).scrollTop()
-        })
-        $('.composer-panel').find('textarea').focusin(function(){
-          // stopScroll()
-          
-          $(window).scrollTop()
-          
-        })
-        $('.composer-panel').find('textarea').focusout(function(){
-          // enableScroll()
-          window.ontouchmove = function (e) {
-            return true;
-          }
-        })
-    }
+      }
     
 })
