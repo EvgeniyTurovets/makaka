@@ -3205,10 +3205,10 @@ $(function(){
         $("#app").append($('.composer-panel'));
      
       }
-      $("#viewport").scroll(function() {
-        if($(window).width() < 576){
-          $('.composer-panel').find('.form-control').blur()
-        }
-      });
+      // $("#viewport").scroll(function() {
+      //   if($(window).width() < 576){
+      //     $('.composer-panel').find('.form-control').blur()
+      //   }
+      // });
      
 })

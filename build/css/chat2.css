@@ -470,9 +470,12 @@
         height: 100%;
         -webkit-overflow-scrolling: touch;
         min-height: auto;
-        position: relative;
+        top: 0;
+        bottom: 0;
+        position: absolute;
         width: 100%;
-        overflow: hidden;
+        overflow: auto;
+        overflow-x: hidden;
     }
 
     .fill {
@@ -494,6 +497,8 @@
 
     .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport {
         -webkit-overflow-scrolling: touch;
+        overflow-y: auto;
+        height: 100%;
     }
 
     #room-nav {
