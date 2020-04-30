@@ -518,7 +518,7 @@
         <script>
          $(document).ready(function() {
              $("#viewport").scroll(function() {
-                var scroll = $(window).scrollTop();
+                var scroll = $("#viewport").scrollTop();
                  $('.position-for-top').html(scroll);
             });
          });
