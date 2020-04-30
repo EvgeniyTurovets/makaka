@@ -445,7 +445,6 @@
     body, html {
         height: 100%;
         -webkit-overflow-scrolling: touch;
-        overflow: auto;
     }
 
     .layout-chat-main-container #room-nav ul.room-list li.room-list-item.selected {
@@ -479,8 +478,12 @@
         height: max-content;
         -webkit-overflow-scrolling: touch;
         min-height: auto;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
         position: relative;
-        overflow: hidden;
+        overflow: visible;
         overflow-x: hidden;
     }
 
