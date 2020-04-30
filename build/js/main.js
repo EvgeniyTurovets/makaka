@@ -3210,7 +3210,7 @@ $(function(){
       //     $('.composer-panel').find('.form-control').blur()
       //   }
       // });
-      $("#app").scroll(function() {
+      $("html").scroll(function() {
         console.log('body scroll')
       });
 })

@@ -445,6 +445,7 @@
     body, html {
         height: 100%;
         -webkit-overflow-scrolling: touch;
+        overflow: hidden;
     }
 
     .layout-chat-main-container #room-nav ul.room-list li.room-list-item.selected {
@@ -452,7 +453,7 @@
     }
 
     .composer-panel {
-        position: fixed;
+        position: absolute;
         bottom: 0;
         display: none;
     }
@@ -482,7 +483,7 @@
         bottom: 0;
         height: 100%;
         width: 100%;
-        position: relative;
+        position: static;
         overflow: visible;
         overflow-x: hidden;
     }
