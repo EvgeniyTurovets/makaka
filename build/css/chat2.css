@@ -24,10 +24,10 @@
     flex-direction: column;
     height: 100%;
 }
-
+/*
 #room-main-body {padding-bottom: 87px !important;}
 .room-body-head {height: 100%; overflow: auto;}
-
+*/
 .chat-container .container {
     height: 100%;
     -webkit-box-flex: 1;
