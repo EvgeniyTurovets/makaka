@@ -453,7 +453,7 @@
     }
 
     .composer-panel {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         display: none;
     }

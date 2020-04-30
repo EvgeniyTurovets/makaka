@@ -3210,7 +3210,13 @@ $(function(){
       //     $('.composer-panel').find('.form-control').blur()
       //   }
       // });
-      $("html").scroll(function() {
+      $("#viewport").scroll(function() {
         console.log('body scroll')
       });
+      $('.composer-panel').find('.form-control').focusin(function(){
+        $('body').css('height', 'auto');
+        $('body').css('overflow', 'auto');
+        $('html').css('height', 'auto');
+        $('html').css('overflow', 'auto');
+      })
 })
