@@ -650,3 +650,9 @@
         text-align: right;
     }
 }
+
+@media (max-width: 424px) {
+    .room-body-head {
+        top: 47px;
+    }
+}
