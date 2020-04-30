@@ -456,12 +456,19 @@
         display: none;
     }
 
+    .room-body-head {
+        position: fixed;
+        top: 60px;
+        z-index: 1;
+        width: 100%;
+    }
+
     .chat-column {
         height: inherit;
     }
 
     #story-box {
-        padding-bottom: 133px;
+        padding-bottom: 86px;
     }
 
     #app {
@@ -505,7 +512,8 @@
     .layout-chat-main-container #room-main-body {
         width: 100%;
         display: none;
-        position: fixed;
+        position: relative;
+        padding-top: 44px;
     }
 
     .room-list {
