@@ -668,3 +668,9 @@
         top: 47px;
     }
 }
+@media(max-width: 575px) {
+    .room-body-head {
+        position: absolute !important;
+        top: 0 !important;
+    }
+}
