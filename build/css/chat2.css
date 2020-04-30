@@ -671,3 +671,4 @@
 
 .room-body-head {position: absolute !important; height: 45px !important; top: 0 !important;}
 .new-scroll {height: 100% !important; width: 100% !important; overflow: auto !important;}
+.layout-chat-main-container #room-main-body div {padding-left: 15px; padding-right: 15px;}
