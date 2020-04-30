@@ -3150,7 +3150,7 @@ $(function(){
     });
 
     //кастомизация скрола
-   
+   /*
     if($(window).width() > 576){
     $(document).ready(function() {
       $(".boxscroll").niceScroll({
@@ -3167,7 +3167,7 @@ $(function(){
         $(".boxscroll").getNiceScroll().onResize();
       }
     });
-    
+    */
     
 
     //открыть чат
