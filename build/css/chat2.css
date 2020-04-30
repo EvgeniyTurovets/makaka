@@ -443,8 +443,9 @@
 
 @media (max-width: 575px) {
     body, html {
-        height: auto;
+        height: 100%;
         -webkit-overflow-scrolling: touch;
+        overflow: auto;
     }
 
     .layout-chat-main-container #room-nav ul.room-list li.room-list-item.selected {
