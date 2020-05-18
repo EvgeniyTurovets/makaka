@@ -442,71 +442,40 @@
 }
 
 @media (max-width: 575px) {
-    body, html {
-        height: 100%;
-        -webkit-overflow-scrolling: touch;
-        overflow: hidden;
-    }
-
-    .layout-chat-main-container #room-nav ul.room-list li.room-list-item.selected {
-        border-right: 0;
-    }
-
     .composer-panel {
-        position: fixed;
-        bottom: 0;
         display: none;
+        position: fixed;
     }
 
     .room-body-head {
         position: fixed;
-        top: 60px;
-        z-index: 1;
         width: 100%;
+        z-index: 1;
     }
 
-    .chat-column {
-        height: inherit;
+    .layout-chat-main-container #room-main-body .room-body {
+        padding-top: 49px;
     }
 
-    #story-box {
-        padding-bottom: 86px;
+    html, body {
+        height: 100%;
+        overflow: hidden;
     }
 
     #app {
-        height: -webkit-max-content;
-        height: -moz-max-content;
-        height: max-content;
+        height: 100%;
         -webkit-overflow-scrolling: touch;
         min-height: auto;
-        top: 0;
-        bottom: 0;
-        height: 100%;
-        width: 100%;
-        position: relative;
-        overflow: auto;
-        overflow-x: hidden;
+        overflow-y: scroll;
     }
 
     .fill {
         position: relative;
         height: 100%;
         top: 0;
-        overflow: hidden;
     }
 
     .layout-chat-main-container .row {
-        height: 100%;
-    }
-
-    .layout-chat-main-container #room-nav ul.room-list {
-        overflow: auto;
-        height: 100%;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport {
-        overflow-y: auto;
         height: 100%;
     }
 
@@ -517,8 +486,6 @@
     .layout-chat-main-container #room-main-body {
         width: 100%;
         display: none;
-        position: relative;
-        padding-top: 44px;
     }
 
     .room-list {
@@ -615,53 +582,15 @@
         font-size: 14px;
     }
 
-    .message {
-        font-size: 14px;
+    .content-section {
+        height: 100%;
     }
 
-    .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport .content .message .my {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        max-width: 90%;
+    .content-section .row {
+        height: 100%;
     }
 
-    .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport .content .message .my .date {
-        width: 100%;
-        text-align: right;
-    }
-
-    .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport .content .message .client {
-        max-width: 90%;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-
-    .layout-chat-main-container #room-main-body .room-body .rooms-chat .air-card .room-chat-area .room-chat-area-content .story-box .story-panel .room-story-list .eo-scroll-continuum-container .viewport .content .message .client .date {
-        width: 100%;
-        text-align: right;
-    }
-
-    .header-row {
-        position: absolute;
-    }
-}
-
-@media (max-width: 424px) {
-    .room-body-head {
-        top: 47px;
+    .content-section .right-column {
+        margin-bottom: 0;
     }
 }
