@@ -3167,7 +3167,7 @@ $(function(){
         $(".boxscroll").getNiceScroll().onResize();
       }
     });
-    
+   
     
 
     //открыть чат
